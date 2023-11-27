@@ -1,0 +1,341 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --GRAD_01: #c85ef7;
+} */
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBoldRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBoldRegular.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBlackItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBlackItalicRegular.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBlackRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBlackRegular.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Ultra";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicUltraBlackItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicUltraBlackItalicRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Book";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBookRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBookRegular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBoldItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBoldItalicRegular.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicThinRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicThinRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Extra";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicExtraBoldRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicExtraBoldRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicItalicRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicThinItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicThinItalicRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBlackRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBlackRegular.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed Bold It";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBoldItRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBoldItRegular.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Book";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBookItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicBookItalicRegular.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Extra";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicExtraBoldItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicExtraBoldItalicRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Ultra";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicUltraBlackRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicUltraBlackRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Ultra";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicUltraLightItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicUltraLightItalicRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Ultra";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicUltraLightRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicUltraLightRegular.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicLightItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicLightItalicRegular.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBoldRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBoldRegular.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicLightRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicLightRegular.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed Black It";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBlackItRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBlackItRegular.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedItalicRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedItalicRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed Book";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBookRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBookRegular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed Light It";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedLightItRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedLightItRegular.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed Ex";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedExBoldRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedExBoldRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed Ex Bd It";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedExBdItRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedExBdItRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedLightRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedLightRegular.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Sonny Gothic Condensed Book It";
+  src: url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBookItRegular.woff2") format("woff2"),
+    url("./assets/fonts/FONTSPRINGDEMO-SonnyGothicCondensedBookItRegular.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  /* font-family: "Sonny_Gothic", sans-serif; / */
+  font-family: "FONTSPRING DEMO - Sonny Gothic", sans-serif;
+  background-color: black;
+}
+
+.plain_input > input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.above {
+  margin-bottom: 5px;
+  background-color: #373639; /* Set line color */
+}
+
+.below {
+  margin-top: 5px;
+  background-color: #373639; /* Set line color */
+}
+
+.texttualgradient {
+  background: -webkit-linear-gradient(bottom, #775cf4, #c85ef7);
+  background: -o-linear-gradient(top, #775cf4, #c85ef7);
+  background: -moz-linear-gradient(top, #775cf4, #c85ef7);
+  background: linear-gradient(to top, #775cf4, #c85ef7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #fff;
+}
+
+progress::-webkit-progress-value {
+  background-color: #cdb8fb !important;
+}
+
+/* For Firefox */
+progress {
+  background-color: #fff;
+}
+
+progress::-moz-progress-bar {
+  background-color: #cdb8fb !important;
+}
+
+/* For IE10 */
+progress {
+  background-color: #fff;
+}
+
+progress {
+  background-color: #cdb8fb;
+}
