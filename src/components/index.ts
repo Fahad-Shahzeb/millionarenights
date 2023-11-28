@@ -11,4 +11,8 @@ export * from "./AdvantagesSection";
 export * from "./TokenDistribution";
 export * from "./GetInTouch";
 export * from "./FAQ";
+export * from "./JoinUsSection";
+export * from "./RoadmapSection";
 export * from "./AboutUs";
+export * from "./AffliateProgramSection";
+export * from "./Footer";

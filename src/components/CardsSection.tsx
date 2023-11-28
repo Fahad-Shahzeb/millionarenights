@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { CardsSection1, CardsSection2, DollarCoin_PNG, EllipseShaded, } from '../assets'
 
 const CardsSection = () => {
+    useEffect(() => {
+
+    }, [])
+
     return (
         <div className='my-10 relative flex flex-col items-center justify-center'>
-            <div className='flex relative items-center justify-center gap-20 flex-wrap'>
+            <div className='flex relative items-center justify-center gap-20 flex-wrap w-full'>
                 <div className='relative flex text-white bg-[#0F0F0F] w-[708px] justify-center items-center   h-[680px] rounded-[50px]'>
                     <div className='absolute  bg-[#C85EF7] w-full  max-w-[570px]  h-[722px] rounded-[50px] z-[-10]' />
                     <div className='flex flex-col gap-5'>
@@ -56,8 +60,9 @@ const CardsSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='absolute right-0 bottom-48 opacity-50 blur-[2px] rotate-90'>
-                <img src={DollarCoin_PNG} className='w-[110px] h-[116px]' alt="" />
+
+            <div className='absolute  -right-10 bottom-48 opacity-50 blur-[2px] rotate-90'>
+                <img src={DollarCoin_PNG} className='  w-[110px]' alt="" />
             </div>
             <div className='relative'>
                 <div className=' bottom-0 mt-32 w-full'>

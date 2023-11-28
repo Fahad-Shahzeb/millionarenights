@@ -23,14 +23,26 @@ import IncomePNG from "./IncomePNG.png";
 import HorizontalLinesPNG from "./HorizontalLinesPNG.png";
 import FlowChartPNG from "./FlowChartPNG.png";
 import User2 from "./1.png";
+import AffliateProgramEllipsePNG from "./AffliateProgramEllipsePNG.png";
+import FlagPNG from "./FlagPNG.png";
+import RoadMapDotsPNG from "./RoadMapDotsPNG.png";
+import BackIcon from "./BackIcon.png";
 
 //Gradients
 import Gradient_1 from "./Gradient_1.png";
+import Gradient_2 from "./Gradient_2.png";
+import Gradient_3 from "./Gradient_3.png";
+import Gradient_4 from "./Gradient_4.png";
+import Gradient_5 from "./Gradient_5.png";
 
 // Exports
 export {
   AppLogo_PNG,
   Gradient_1,
+  Gradient_2,
+  Gradient_3,
+  Gradient_4,
+  Gradient_5,
   DollarCoin_PNG,
   HeartCoin_PNG,
   UserAvatar_PNG,
@@ -55,4 +67,8 @@ export {
   HorizontalLinesPNG,
   FlowChartPNG,
   User2,
+  AffliateProgramEllipsePNG,
+  FlagPNG,
+  RoadMapDotsPNG,
+  BackIcon,
 };

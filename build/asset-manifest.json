@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9439004.css",
-    "main.js": "/static/js/main.d2515198.js",
+    "main.css": "/static/css/main.b5e095ea.css",
+    "main.js": "/static/js/main.5b50c32f.js",
     "static/js/787.0d1280ff.chunk.js": "/static/js/787.0d1280ff.chunk.js",
+    "static/media/Gradient_4.png": "/static/media/Gradient_4.ea1122d1600b5d63061f.png",
+    "static/media/Gradient_3.png": "/static/media/Gradient_3.2ec9aa5753d6e5b80f2f.png",
+    "static/media/Gradient_5.png": "/static/media/Gradient_5.fc0dc51b9798f8587e79.png",
+    "static/media/Gradient_2.png": "/static/media/Gradient_2.a62d59167deb480fd1e8.png",
     "static/media/FlowChartPNG.png": "/static/media/FlowChartPNG.d4bc4d2c8bae3b8ed946.png",
     "static/media/Gradient_1.png": "/static/media/Gradient_1.2600b54eb0c512c4e616.png",
     "static/media/IPhoneBG.svg": "/static/media/IPhoneBG.e411b9e1586064ed57bc27d28134e999.svg",
@@ -11,6 +15,7 @@
     "static/media/dollar-coin.png": "/static/media/dollar-coin.4ba17cb6ad92a64aa602.png",
     "static/media/CarImageIphone.png": "/static/media/CarImageIphone.712e00184d320d716d08.png",
     "static/media/globe.png": "/static/media/globe.3772fa38d4f6aacbda9f.png",
+    "static/media/AffliateProgramEllipsePNG.png": "/static/media/AffliateProgramEllipsePNG.0337091c6f9f33afc433.png",
     "static/media/Ellipse28.png": "/static/media/Ellipse28.3a1a5f8a2367efb5f0ea.png",
     "static/media/user.png": "/static/media/user.c70c60d784bb5d99b226.png",
     "static/media/cardsSectionImage_2.png": "/static/media/cardsSectionImage_2.c2eba2f97c991e3d0c82.png",
@@ -43,7 +48,7 @@
     "static/media/FONTSPRINGDEMO-SonnyGothicCondensedLightRegular.woff": "/static/media/FONTSPRINGDEMO-SonnyGothicCondensedLightRegular.7560d279ba98bcdb84be.woff",
     "static/media/FONTSPRINGDEMO-SonnyGothicLightRegular.woff": "/static/media/FONTSPRINGDEMO-SonnyGothicLightRegular.21a20d24983c1590c3f9.woff",
     "static/media/FONTSPRINGDEMO-SonnyGothicCondensedBookRegular.woff": "/static/media/FONTSPRINGDEMO-SonnyGothicCondensedBookRegular.1a00a0ca04449ef025be.woff",
-    "static/media/EllipseShaded.svg": "/static/media/EllipseShaded.1516e48851f83323d5ec5ea6f68935a4.svg",
+    "static/media/EllipseShaded.svg": "/static/media/EllipseShaded.47817ee4a3162c0376ecf8fa4610d75f.svg",
     "static/media/FONTSPRINGDEMO-SonnyGothicThinItalicRegular.woff": "/static/media/FONTSPRINGDEMO-SonnyGothicThinItalicRegular.e6d8a4336691d4ed088f.woff",
     "static/media/FONTSPRINGDEMO-SonnyGothicItalicRegular.woff": "/static/media/FONTSPRINGDEMO-SonnyGothicItalicRegular.1b4d55f70a28fd420f0f.woff",
     "static/media/FONTSPRINGDEMO-SonnyGothicBookRegular.woff": "/static/media/FONTSPRINGDEMO-SonnyGothicBookRegular.01c54ee96a1e98b0edce.woff",
@@ -81,13 +86,14 @@
     "static/media/FONTSPRINGDEMO-SonnyGothicCondensedRegular.woff2": "/static/media/FONTSPRINGDEMO-SonnyGothicCondensedRegular.fce2eb24e374bcd96518.woff2",
     "static/media/FONTSPRINGDEMO-SonnyGothicThinRegular.woff2": "/static/media/FONTSPRINGDEMO-SonnyGothicThinRegular.88aaf61e1dc0740a08cf.woff2",
     "static/media/FONTSPRINGDEMO-SonnyGothicRegular.woff2": "/static/media/FONTSPRINGDEMO-SonnyGothicRegular.b045429e6e731d947c09.woff2",
+    "static/media/ShadedFlag.svg": "/static/media/ShadedFlag.09e481b593c07019ed98b8a0a2107efc.svg",
     "index.html": "/index.html",
-    "main.b9439004.css.map": "/static/css/main.b9439004.css.map",
-    "main.d2515198.js.map": "/static/js/main.d2515198.js.map",
+    "main.b5e095ea.css.map": "/static/css/main.b5e095ea.css.map",
+    "main.5b50c32f.js.map": "/static/js/main.5b50c32f.js.map",
     "787.0d1280ff.chunk.js.map": "/static/js/787.0d1280ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9439004.css",
-    "static/js/main.d2515198.js"
+    "static/css/main.b5e095ea.css",
+    "static/js/main.5b50c32f.js"
   ]
 }

@@ -159,8 +159,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint1_linear_72_662'
@@ -170,8 +170,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint2_linear_72_662'
@@ -181,8 +181,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint3_linear_72_662'
@@ -192,8 +192,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint4_linear_72_662'
@@ -203,8 +203,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint5_linear_72_662'
@@ -214,8 +214,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint6_linear_72_662'
@@ -225,8 +225,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint7_linear_72_662'
@@ -236,8 +236,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint8_linear_72_662'
@@ -247,8 +247,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint9_linear_72_662'
@@ -258,8 +258,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint10_linear_72_662'
@@ -269,8 +269,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint11_linear_72_662'
@@ -280,8 +280,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint12_linear_72_662'
@@ -291,8 +291,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint13_linear_72_662'
@@ -302,8 +302,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint14_linear_72_662'
@@ -313,8 +313,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint15_linear_72_662'
@@ -324,8 +324,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint16_linear_72_662'
@@ -335,8 +335,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint17_linear_72_662'
@@ -346,8 +346,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint18_linear_72_662'
@@ -357,8 +357,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint19_linear_72_662'
@@ -368,8 +368,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint20_linear_72_662'
@@ -379,8 +379,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint21_linear_72_662'
@@ -390,8 +390,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint22_linear_72_662'
@@ -401,8 +401,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint23_linear_72_662'
@@ -412,8 +412,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint24_linear_72_662'
@@ -423,8 +423,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint25_linear_72_662'
@@ -434,8 +434,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint26_linear_72_662'
@@ -445,8 +445,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint27_linear_72_662'
@@ -456,8 +456,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint28_linear_72_662'
@@ -467,8 +467,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint29_linear_72_662'
@@ -478,8 +478,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint30_linear_72_662'
@@ -489,8 +489,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint31_linear_72_662'
@@ -500,8 +500,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint32_linear_72_662'
@@ -511,8 +511,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint33_linear_72_662'
@@ -522,8 +522,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint34_linear_72_662'
@@ -533,8 +533,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='paint35_linear_72_662'
@@ -544,8 +544,8 @@ export const DotsShades = () => {
         y2='193'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='white' />
-        <stop offset='1' stop-color='white' stop-opacity='0' />
+        <stop stopColor='white' />
+        <stop offset='1' stopColor='white' stopOpacity='0' />
       </linearGradient>
     </defs>
   </svg>;
@@ -710,8 +710,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint1_linear_72_662'
@@ -721,8 +721,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint2_linear_72_662'
@@ -732,8 +732,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint3_linear_72_662'
@@ -743,8 +743,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint4_linear_72_662'
@@ -754,8 +754,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint5_linear_72_662'
@@ -765,8 +765,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint6_linear_72_662'
@@ -776,8 +776,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint7_linear_72_662'
@@ -787,8 +787,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint8_linear_72_662'
@@ -798,8 +798,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint9_linear_72_662'
@@ -809,8 +809,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint10_linear_72_662'
@@ -820,8 +820,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint11_linear_72_662'
@@ -831,8 +831,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint12_linear_72_662'
@@ -842,8 +842,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint13_linear_72_662'
@@ -853,8 +853,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint14_linear_72_662'
@@ -864,8 +864,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint15_linear_72_662'
@@ -875,8 +875,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint16_linear_72_662'
@@ -886,8 +886,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint17_linear_72_662'
@@ -897,8 +897,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint18_linear_72_662'
@@ -908,8 +908,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint19_linear_72_662'
@@ -919,8 +919,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint20_linear_72_662'
@@ -930,8 +930,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint21_linear_72_662'
@@ -941,8 +941,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint22_linear_72_662'
@@ -952,8 +952,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint23_linear_72_662'
@@ -963,8 +963,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint24_linear_72_662'
@@ -974,8 +974,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint25_linear_72_662'
@@ -985,8 +985,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint26_linear_72_662'
@@ -996,8 +996,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint27_linear_72_662'
@@ -1007,8 +1007,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint28_linear_72_662'
@@ -1018,8 +1018,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint29_linear_72_662'
@@ -1029,8 +1029,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint30_linear_72_662'
@@ -1040,8 +1040,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint31_linear_72_662'
@@ -1051,8 +1051,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint32_linear_72_662'
@@ -1062,8 +1062,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint33_linear_72_662'
@@ -1073,8 +1073,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint34_linear_72_662'
@@ -1084,8 +1084,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint35_linear_72_662'
@@ -1095,8 +1095,8 @@ export const DotsShades = () => {
           y2='193'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
       </defs>
     </svg>

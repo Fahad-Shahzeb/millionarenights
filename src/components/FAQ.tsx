@@ -33,7 +33,7 @@ const FAQ = () => {
   const faqData = [
     {
       question:
-        'HOW DO I BUY A ŠMILLIONAIRE <span className="texttualgradient">NIGHTS</span> TOKEN?',
+        'HOW DO I BUY A ŠMILLIONAIRE NIGHTSTOKEN?',
       answer:
         'SMillion Aire can only be purchased on our official website [Image of ŠMILLIONAIRENIGHTS website] with BNR ETH USDT KERC-20) USDC (ERC-20) BUSD (BEP-20)L USDI (BEP-20).or.credit card at our partner through Transak',
     },
@@ -65,10 +65,13 @@ const FAQ = () => {
   ];
 
   return (
-    <div className='w-[80%] mx-auto my-12 flex flex-col gap-5'>
-      {faqData.map((item, index) => (
-        <FAQItem key={index} question={item.question} answer={item.answer} />
-      ))}
+    <div className='mt-20 mb-28'>
+      <p className='text-white text-[42px] mb-12 font-normal uppercase text-center'>FAQ</p>
+      <div className='w-[80%] mx-auto  flex flex-col gap-5'>
+        {faqData.map((item, index) => (
+          <FAQItem key={index} question={item.question} answer={item.answer} />
+        ))}
+      </div>
     </div>
   );
 };

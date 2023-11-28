@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, HeroSection, MainHeadingSection, EllipseSection, ThemeGradient, CardsSection, Seperator, MobileScreenComponent, OfferSection, AdvantagesSection, TokenDistribution, AboutUs, FAQ, GetInTouch } from './components';
+import { Header, HeroSection, MainHeadingSection, EllipseSection, ThemeGradient, CardsSection, Seperator, MobileScreenComponent, OfferSection, AdvantagesSection, TokenDistribution, AboutUs, FAQ, GetInTouch, AffliateProgramSection, Footer, RoadmapSection, JoinUsSection } from './components';
 
 function App() {
   return (
@@ -20,14 +20,23 @@ function App() {
         <Seperator version='withRightImage' />
         <AdvantagesSection />
         <Seperator version='partial' />
+        <AffliateProgramSection />
+        <OfferSection />
+        <Seperator version='basic' />
+        <JoinUsSection />
         <TokenDistribution />
         <Seperator version='basic' />
+        <RoadmapSection />
+        <Seperator version='basic' />
         <AboutUs />
+        <Seperator version='basic' />
         <FAQ />
+        <Seperator version='basic' />
         <GetInTouch />
-
-        {/* <OfferSection /> */}
+        <Seperator version='basic' />
+        <Footer />
       </div>
+
     </div>
   );
 }

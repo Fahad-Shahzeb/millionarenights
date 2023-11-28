@@ -6,3 +6,5 @@ export * from "./ETHIcon";
 export * from "./USDTIcon";
 export * from "./OtherSvgs";
 export * from "./OfferDotsIcon";
+export * from "./LeftRightIcon";
+export * from "./FlagIcon";

@@ -276,10 +276,15 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   /* font-family: "Sonny_Gothic", sans-serif; / */
   font-family: "FONTSPRING DEMO - Sonny Gothic", sans-serif;
   background-color: black;
+  overflow-x: hidden;
 }
 
 .plain_input > input:focus,

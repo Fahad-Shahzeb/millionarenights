@@ -26,8 +26,14 @@ const HeroSection = () => {
                             </div>
                             <div className='flex gap-3'>
                                 {socialIcons.map((item, index) => (
-                                    <div key={index} className='p-3 border-2 rounded-full flex items-center justify-center'>
+                                    <div className=" inset-0 rounded-[100px] w-12 h-12 top-10 flex justify-center items-center"
+                                        style={{
+                                            backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
+                                            mixBlendMode: 'screen',
+                                            filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
+                                        }}>
                                         <SocialIcons mode={item} size={1} />
+
                                     </div>
                                 ))}
                             </div>
@@ -36,49 +42,60 @@ const HeroSection = () => {
                     <div className='flex  flex-col items-center  gap-3'>
                         <div
                             style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                            className='flex border-2 border-white px-8 py-16 rounded-3xl items-center flex-col gap-3'>
-                            <p className='text-lg font-normal text-center'>BUY IN BEFORE PRICE INCREASES<span className='font-sans'>!</span> <br />Stage 2</p>
-                            <progress className='h-10 w-full rounded-3xl overflow-hidden ' id="reviews" value="5" max="5" />
-                            <div className='opacity-60'>
-                                <p className='text-xs font-normal'>931 123 VLT <span className='font-sans'>/</span> 1 000 000 VLT</p>
-                                <p className='text-xs font-normal'>CEX LISTING PRICE: <span className='font-sans'>$</span>0.16</p>
-                                <p className='text-xs font-normal'>Any unsold tokens will be burnt</p>
-                            </div>
-                            <div className='bg-[#fff]/[0.07] plain_input w-full py-4 rounded-[30px]'>
-                                <input className=' bg-transparent px-4 text-white   ' placeholder='' />
-                            </div>
-                            <div className='flex justify-between flex-1  w-full gap-3'>
-                                <div className='flex gap-3 items-center justify-center bg-[#fff]/[0.07] plain_input w-full py-4 rounded-[30px]'>
-                                    <ETHIcon size={2} />
-                                    <p className='text-sm font-normal antialiased'>ETH</p>
+                            className='flex border-2 border-white rounded-3xl items-center flex-col gap-3'>
+                            <p className='pt-6 text-sm font-light antialiased'>
+                                <span className='font-semibold text-lg'>Ethereum </span>
+                                <span className='text-[#775cf4]'>Click here </span>
+                                to switch network
+                            </p>
+                            <div className='flex px-8 pb-16 pt-2 items-center flex-col gap-3'>
+
+                                <p className='text-lg font-normal text-center'>BUY IN BEFORE PRICE INCREASES<span className='font-sans'>!</span> <br />Stage 2</p>
+                                <div className='flex w-full justify-center items-center'>
+                                    <progress className='h-10 w-full rounded-3xl overflow-hidden ' id="reviews" value="5" max="5" />
+                                    <p className='absolute text-black text-sm font-semibold text-center'>UNTIL NEXT PRICE <span className='font-sans'>$</span>0.07</p>
                                 </div>
-                                <div className=' flex gap-3 items-center justify-center bg-[#fff]/[0.07] plain_input w-full py-4 rounded-[30px]'>
-                                    <USDTIcon size={2} />
-                                    <p className='text-sm font-normal antialiased'>USDT</p>
+                                <div className='opacity-60'>
+                                    <p className='text-xs font-normal'>931 123 VLT <span className='font-sans'>/</span> 1 000 000 VLT</p>
+                                    <p className='text-xs font-normal'>CEX LISTING PRICE: <span className='font-sans'>$</span>0.16</p>
+                                    <p className='text-xs font-normal'>Any unsold tokens will be burnt</p>
                                 </div>
-                            </div>
-                            <div className='flex justify-between items-center flex-1  w-full gap-3'>
-                                <div className='w-full '>
-                                    <p className='mb-1 text-sm font-normal text-[#fff]/[0.6] text-center'>ETH you pay</p>
-                                    <div className='py-3  flex items-center px-4 bg-[#fff]/[0.07] plain_input w-full  rounded-[30px]'>
-                                        <p className='text-[#AD87FF] text-lg  font-normal antialiased'>0.0</p>
+                                <div className='bg-[#fff]/[0.07] plain_input w-full py-4 rounded-[30px]'>
+                                    <input className=' bg-transparent px-4 text-white   ' placeholder='' />
+                                </div>
+                                <div className='flex justify-between flex-1  w-full gap-3'>
+                                    <div className='flex gap-3 items-center justify-center bg-[#fff]/[0.07] plain_input w-full py-4 rounded-[30px]'>
+                                        <ETHIcon size={2} />
+                                        <p className='text-sm font-normal antialiased'>ETH</p>
+                                    </div>
+                                    <div className=' flex gap-3 items-center justify-center bg-[#fff]/[0.07] plain_input w-full py-4 rounded-[30px]'>
+                                        <USDTIcon size={2} />
+                                        <p className='text-sm font-normal antialiased'>USDT</p>
                                     </div>
                                 </div>
-                                <div className='w-full'>
-                                    <p className='mb-1  text-sm font-normal text-[#fff]/[0.6] text-center'>USDT you receive</p>
-                                    <div className='py-3  flex items-center px-4 bg-[#fff]/[0.07] plain_input w-full rounded-[30px]'>
-                                        <p className='text-[#AD87FF] text-lg  font-normal antialiased'>0.0</p>
+                                <div className='flex justify-between items-center flex-1  w-full gap-3'>
+                                    <div className='w-full '>
+                                        <p className='mb-1 text-sm font-normal text-[#fff]/[0.6] text-center'>ETH you pay</p>
+                                        <div className='py-3  flex items-center px-4 bg-[#fff]/[0.07] plain_input w-full  rounded-[30px]'>
+                                            <p className='text-[#AD87FF] text-lg  font-normal antialiased'>0.0</p>
+                                        </div>
+                                    </div>
+                                    <div className='w-full'>
+                                        <p className='mb-1  text-sm font-normal text-[#fff]/[0.6] text-center'>USDT you receive</p>
+                                        <div className='py-3  flex items-center px-4 bg-[#fff]/[0.07] plain_input w-full rounded-[30px]'>
+                                            <p className='text-[#AD87FF] text-lg  font-normal antialiased'>0.0</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className='mt-4 flex justify-between items-center flex-1  w-full gap-3'>
-                                <div
-                                    style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                                    className=' py-3  flex items-center px-4  plain_input w-full rounded-[30px]'>
-                                    <p className=' text-base justify-center font-normal antialiased'>Connect wallet</p>
-                                </div>
-                                <div className='py-3 bg-gradient-to-t from-[#775CF4] to-[#C85EF7] flex items-center justify-center px-4 bg-[#fff]/[0.07] plain_input w-full  rounded-[30px]'>
-                                    <p className=' text-base font-normal antialiased'>Buy Crypto</p>
+                                <div className='mt-4 flex justify-between items-center flex-1  w-full gap-3'>
+                                    <div
+                                        style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
+                                        className=' py-3  flex items-center px-4  plain_input w-full rounded-[30px]'>
+                                        <p className=' text-base justify-center font-normal antialiased'>Connect wallet</p>
+                                    </div>
+                                    <div className='py-3 bg-gradient-to-t from-[#775CF4] to-[#C85EF7] flex items-center justify-center px-4 bg-[#fff]/[0.07] plain_input w-full  rounded-[30px]'>
+                                        <p className=' text-base font-normal antialiased'>Buy Crypto</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

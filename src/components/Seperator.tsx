@@ -20,11 +20,20 @@ const Seperator = ({ version = 'basic' }: { version?: version }) => {
                 </div>
             }
             {version === 'withRightImage' &&
-                <div className='relative text-white '>
-                    <div className='relative '>
-                        <img src={LogoCoin_PNG} className=' absolute  -top-52 -right-48 w-[400px] h-[400px]' alt="" />
+                <div className=' text-white '>
+                    <div className='relative flex justify-center items-center'>
+                        <img src={LogoCoin_PNG} className=' 
+                        absolute overflow-hidden 
+                        max-sm:left-5 right-0
+                        sm:-right-20  xl:-right-28  2xl:-right-40
+                        w-[100px] h-[100px]   
+                        sm:w-[200px] sm:h-[200px]                         
+                        lg:w-[200px] lg:h-[200px] 
+                        xl:w-[280px] xl:h-[280px] 
+                        2xl:w-[350px] 2xl:h-[350px]
+                        ' alt="" />
+                        <hr className="line above bg-[#373639]" />
                     </div>
-                    <hr className="line above bg-[#373639]" />
                 </div>
             }
         </div>

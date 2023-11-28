@@ -10,7 +10,7 @@ const TokenDistribution = () => {
 
     const SingleCard = ({ icon, title, subtitle }: TokenDistributionProps): JSX.Element => {
         return (
-            <div className='relative flex flex-col text-white bg-[#0F0F0F] w-[320px] justify-center items-center   h-[320px] rounded-[50px] gap-8'>
+            <div className='relative  flex flex-col text-white bg-[#0F0F0F] w-[320px] justify-center items-center   h-[320px] rounded-[50px] gap-8'>
                 <div className='absolute  bg-[#C85EF7] w-full  max-w-[200px]  h-[40px] -top-3 rounded-[50px] z-[-10]' />
                 <div className=" inset-0 rounded-[100px] p-6 w-24 h-24 top-10 flex justify-center items-center"
                     style={{
@@ -53,8 +53,8 @@ const TokenDistribution = () => {
 
 
     return (
-        <div >
-            <div className='text-white my-16 flex flex-col justify-center items-center'>
+        <div className='my-16 '>
+            <div className='text-white flex flex-col justify-center items-center'>
                 <div>
                     <p className='text-center text-[42px] font-normal uppercase'>TOKEN DISTRIBUTION</p>
                     <div className=' flex items-center justify-center gap-5'>
@@ -72,7 +72,12 @@ const TokenDistribution = () => {
                 </div>
             </div>
             <div className='text-white mt-28 mb-16 flex items-center justify-center'>
-                <img src={FlowChartPNG} className='w-[35%]' alt="" />
+                <img src={FlowChartPNG} className='
+                w-[218px]
+                sm:w-[420px]
+                md:w-[627px] 
+               
+                ' alt="" />
             </div>
         </div>
     )

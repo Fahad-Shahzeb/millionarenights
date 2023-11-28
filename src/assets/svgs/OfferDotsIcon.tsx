@@ -1,9 +1,13 @@
 import * as React from "react";
 import { SVGProps } from "react";
-const OfferDotsIcon = (props: SVGProps<SVGSVGElement>) => (
+
+interface Props extends SVGProps<SVGSVGElement> {
+  size?: number
+}
+const OfferDotsIcon = (props: Props) => (
   <svg
-    width={108}
-    height={180}
+    width={props.size ? `${props.size}em` : "12rem"}
+    height={props.size ? `${props.size}em` : "12rem"}
     viewBox='0 0 108 180'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
