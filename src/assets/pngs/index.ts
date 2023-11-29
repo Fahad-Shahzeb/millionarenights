@@ -34,6 +34,7 @@ import Gradient_2 from "./Gradient_2.png";
 import Gradient_3 from "./Gradient_3.png";
 import Gradient_4 from "./Gradient_4.png";
 import Gradient_5 from "./Gradient_5.png";
+import CircleGradient from "./CircleGradient.png";
 
 // Exports
 export {
@@ -71,4 +72,5 @@ export {
   FlagPNG,
   RoadMapDotsPNG,
   BackIcon,
+  CircleGradient,
 };

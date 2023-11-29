@@ -11,21 +11,19 @@ interface AdvantageBubbleProps {
 const AdvantagesSection = () => {
 
     const AdvantageBubble = ({ icon, title, subtitle }: AdvantageBubbleProps): JSX.Element => {
-        return (<div className='flex  gap-10'>
-            <div className=" inset-0 rounded-[100px] w-36 h-36 top-10 flex justify-center items-center"
-                style={{
-                    backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
-                    mixBlendMode: 'screen',
-                    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
-                }}>
-                <img src={icon} alt="" />
-
+        return (
+            <div className='flex  gap-6 flex-col xl:flex-row justify-center items-center'>
+                <div className=" inset-0 rounded-full  p-3 w-[150px] h-[150px]   flex justify-center items-center"
+                    style={{
+                        backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
+                    }}>
+                    <img src={icon} className='w-fit  h-fit' alt="" />
+                </div>
+                <div className='flex flex-1 justify-center flex-col w-full'>
+                    <p className='text-[18px] sm:text-[24px] xl:text-[28px] text-center font-normal antialiased uppercase'>{title}</p>
+                    <p className='text-[16px] sm:text-[24px] font-light text-center text-[#989898]'>{subtitle}</p>
+                </div>
             </div>
-            <div className='flex justify-center flex-col'>
-                <p className='text-[28px] font-normal antialiased uppercase'>{title}</p>
-                <p className='text-base font-light text-[#989898]'>{subtitle}</p>
-            </div>
-        </div>
         )
     }
 
@@ -53,33 +51,35 @@ const AdvantagesSection = () => {
     ]
 
     return (
-        <div className=''>
-            <div className='my-16  text-white flex flex-1 gap-24 justify-center '>
-                <div className='relative flex text-white bg-[#0F0F0F] w-[628px] justify-center items-center  h-[856px] rounded-[50px]'>
-                    <div className='absolute  bg-[#5318D1] w-full -right-5  max-w-[40px]  h-[746px] rounded-[50px] z-[-10]' />
-                    <div className='flex flex-col gap-5'>
-                        <div className='absolute -left-[10%] rotate-[70deg] blur-[2px]'>
-                            <img src={LogoCoin_PNG} className='w-[130px] h-[130px] ' />
-                        </div>
-                        <div className='flex flex-col items-center justify-center gap-10'>
-                            <p className='text-[42px] font-normal uppercase antialiased m-0 text-center texttualgradient'>
-                                ADVANTAGES
-                            </p>
-                            <p className='text-[42px] leading-10 font-light uppercase m-0 text-center'>
-                                Steady<br />income simply<br />with the<br />
-                                <p className='font-bold '>
-                                    Millionaire
-                                    <span className='texttualgradient'>Nights</span>
+        <div className='mx-auto'>
+            <div className='my-16 px-8 text-white flex  gap-20 justify-center flex-col xl:flex-row bg-slate-0'>
+                <div className='flex flex-1 justify-center items-center'>
+                    <div className='relative flex  text-white bg-[#0F0F0F] w-[300px] h-[350px] sm:w-[520px] sm:h-[700px] md:w-[628px] md:h-[856px]  justify-center items-center  rounded-[50px]'>
+                        <div className='absolute  bg-[#5318D1] w-full -right-5  max-w-[40px] h-[250px] sm:h-[550px] md:h-[746px] rounded-[50px] z-[-10]' />
+                        <div className='flex flex-col gap-5'>
+                            <div className='hidden md:block absolute -left-[10%] rotate-[70deg] blur-[2px]'>
+                                <img src={LogoCoin_PNG} className='w-[130px] h-[130px] ' />
+                            </div>
+                            <div className='flex flex-col items-center justify-center gap-2 sm:gap-10'>
+                                <p className='text-[28px] sm:text-[42px]  font-normal uppercase antialiased m-0 text-center texttualgradient'>
+                                    ADVANTAGES
                                 </p>
-                                Token<span className='font-sans'>!</span>
-                            </p>
-                            <p className='w-[70%] text-2xl font-light  m-0 text-center'>
-                                Token holders get their share from the profits of the company.
-                            </p>
+                                <p className='text-[22px] sm:text-[42px] leading-7 sm:leading-10 font-light uppercase m-0 text-center'>
+                                    Steady<br />income simply<br />with the<br />
+                                    <p className='font-bold '>
+                                        Millionaire
+                                        <span className='texttualgradient'>Nights</span>
+                                    </p>
+                                    Token<span className='font-sans'>!</span>
+                                </p>
+                                <p className='w-[70%] text-base sm:text-2xl font-light  m-0 text-center'>
+                                    Token holders get their share from the profits of the company.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col  justify-between'>
+                <div className='flex flex-1 flex-col gap-10 self-center justify-between w-[70%] lg:w-full '>
                     {details.map((item, index) => <AdvantageBubble key={index} icon={item.icon} title={item.title} subtitle={item.subtitle} />)}
                 </div>
             </div>

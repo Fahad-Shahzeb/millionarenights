@@ -3,25 +3,18 @@ import { HorizontalLinesPNG, LogoCoin_PNG } from "../assets";
 
 const JoinUsSection = () => {
     return (
-        <section className='mt-10'>
-            <div className='text-white flex items-center flex-col'>
-                <h2 className='text-6xl uppercase text-center'>
-                    Join Us Now<span className='font-sans'>!</span>
-                </h2>
-                {/* <div className=' flex items-center justify-center gap-5 mt-8'>
-                    <img
-                        src={HorizontalLinesPNG}
-                        className='mt-[1px]'
-                        alt=''
-                    />
-                    <img
-                        src={HorizontalLinesPNG}
-                        className='rotate-180'
-                    />
-                    <p className='absolute flex text-white text-lg gap-10'>
-                        The future starts today. Dont miss out.
-                    </p>
-                </div> */}
+        <section className='mt-10 overflow-x-hidden'>
+            <div className="text-white ">
+                <p className='text-center text-[24px] md:text-[42px] text-white font-normal uppercase'>Join Us Now<span className='font-sans'>!</span></p>
+                <div className='mt-4 flex flex-col items-center justify-center gap-1 lg:gap-5'>
+                    <img src={HorizontalLinesPNG} className='mt-[1px] mx-auto w-[90%] ' alt="" />
+                    <div className='flex items-center justify-center flex-col gap-1 lg:flex-row lg:gap-5'>
+                        <p className='text-sm overflow-wrap px-3 lg:text-base font-semibold text-center' style={{ overflowWrap: 'anywhere' }}>
+                            The future starts today. Dont miss out.
+                        </p>
+                    </div>
+                    <img src={HorizontalLinesPNG} className='w-[90%] ' />
+                </div>
             </div>
 
             {/* Sections */}

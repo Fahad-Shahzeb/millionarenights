@@ -19,6 +19,7 @@ function App() {
         <MobileScreenComponent />
         <Seperator version='withRightImage' />
         <AdvantagesSection />
+
         <Seperator version='partial' />
         <AffliateProgramSection />
         <OfferSection />
