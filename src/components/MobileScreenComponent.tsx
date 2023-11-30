@@ -1,9 +1,6 @@
 import React from 'react';
 import {
-    CarImageIphone,
     IPhoneBG,
-    Iphone_PNG,
-    ShadyDotsIcon,
     ShadyDotsIcon2,
 } from '../assets';
 
@@ -16,7 +13,7 @@ const MobileScreenComponent = () => {
                         Millionaire
                         <span className='texttualgradient'>Nights</span>
                         <br />
-                        <p className=' font-light text-center uppercase'>Party</p>
+                        <span className=' font-light text-center uppercase'>Party</span>
                     </p>
                 </div>
                 <div className='flex  justify-center items-center gap-36'>

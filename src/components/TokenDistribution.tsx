@@ -61,9 +61,9 @@ const TokenDistribution = () => {
     const SwiperCard = () => (
         <Swiper
             cssMode={true}
-            navigation={{
+            // navigation={{
 
-            }}
+            // }}
             pagination={{
 
             }}
@@ -72,10 +72,10 @@ const TokenDistribution = () => {
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="mySwiper text-black h-full"
         >
-            {details.map(() => (
-                <SwiperSlide className=''>
+            {details.map((item, index) => (
+                <SwiperSlide key={index} className=''>
                     <div className='flex flex-col items-center justify-center flex-1 h-full '>
-                        <SingleCard icon={details[0].icon} title={details[0].title} subtitle={details[0].subtitle} />
+                        <SingleCard icon={item.icon} title={item.title} subtitle={item.subtitle} />
                     </div>
                 </SwiperSlide>
             ))

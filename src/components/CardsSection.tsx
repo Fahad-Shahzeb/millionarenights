@@ -32,9 +32,9 @@ const CardsSection = () => {
                                 Millionaire
                                 <span className='texttualgradient'>Nights</span>
                                 <br />
-                                <p className='mt-[-15px] xs:-mt-1 xs:text-2xl font-light text-center uppercase'>
+                                <span className='mt-[-15px] xs:-mt-1 xs:text-2xl font-light text-center uppercase'>
                                     Dating
-                                </p>
+                                </span>
                             </p>
                             <p className='w-[80%] px-0 xs:w-full xs:px-2 text-center text-[#989898] text-base font-light '>
                                 MillionaireNights isn<span className='font-sans'>'</span>t just
@@ -78,7 +78,7 @@ const CardsSection = () => {
                             <p className=' text-[42px] xs:text-2xl font-light text-center uppercase'>
                                 Luxury
                                 <br />
-                                <p className='mt-[-15px] xs:mt-0'> Marketplace</p>
+                                <span className='mt-[-15px] xs:mt-0'> Marketplace</span>
                             </p>
                             <p className='w-[80%] text-center text-[#989898] text-base font-light '>
                                 For only authentic sellers and the most demanding buyers. Choose

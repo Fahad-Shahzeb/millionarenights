@@ -1,38 +1,39 @@
-import React from 'react'
-import { ThemeGradient } from './ThemeGradient'
-import { AppLogo_PNG, ShadyDotsIcon } from '../assets'
+import React from "react";
+import { AppLogo_PNG, BurgerMenu, ShadyDotsIcon } from "../assets";
 
-const Header = () => {
-
-    const navBarHeadings = ['Home', 'About', 'How to Buy', 'Tokenomics', 'Roadmap']
-
+const Header = ({ navBarHeadings, setshowMenu }: any) => {
     return (
-        <div className='relative'>
-            <div className='hidden 600:flex flex-1 py-5 px-10  justify-between items-center'>
-                <div className='flex items-center'>
-                    <img src={AppLogo_PNG} className='w-14 h-w-14' />
-                    <div >
-                        <ul className=' flex  flex-row gap-8 ml-20'>
-                            {navBarHeadings.map((item, index) => (
-                                <li key={index} className=' flex flex-row border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full items-center gap-1 text-white'>
-                                    <p className='text-lg font-light '>{item}</p>
-                                </li>
-                            ))}
-                        </ul>
+        <div className='absolute top-0 left-0 w-full z-50'>
+            <div className='flex flex-1 py-5 px-10 justify-between items-center'>
+                <img
+                    src={AppLogo_PNG}
+                    className='w-14 h-w-14'
+                />
+                <div className='hidden lg2:flex justify-between w-full gap-[20px] transition-all'>
+                    <div className='flex flex-row gap-[20px] ml-20'>
+                        {navBarHeadings.map((item: any, index: number) => (
+                            <button
+                                key={index}
+                                className='border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light h-full text-center w-[143px]'>
+                                {item}
+                            </button>
+                        ))}
                     </div>
+                    <button className='hidden lg:block border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light h-full text-center w-[143px]'>
+                        {"Contact"}
+                    </button>
                 </div>
-                <div>
-                    <ul className=' flex  flex-row gap-8'>
-                        <li className=' flex flex-row border-[2px] border-[#B8A8D8]  px-5 py-1 rounded-full items-center gap-1 text-white'>
-                            <p className='text-lg font-light '>{'Contact'}</p>
-                        </li>
-                    </ul>
-                    <ShadyDotsIcon />
-                </div>
+                <button
+                    onClick={() => setshowMenu()}
+                    className='flex lg2:hidden border-none'>
+                    <img src={BurgerMenu} />
+                </button>
             </div>
-
+            <div className='hidden lg2:block'>
+                <ShadyDotsIcon />
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export { Header }
+export { Header };

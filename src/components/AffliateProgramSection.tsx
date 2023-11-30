@@ -1,5 +1,5 @@
 import React from 'react'
-import { AffliateProgramEllipsePNG, CircleGradient, Globe_PNG } from '../assets'
+import { AffliateProgramEllipsePNG, CircleGradient, } from '../assets'
 
 
 

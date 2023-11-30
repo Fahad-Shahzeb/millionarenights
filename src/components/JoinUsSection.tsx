@@ -7,15 +7,16 @@ const JoinUsSection = () => {
             <div className="text-white ">
                 <p className='text-center text-[24px] md:text-[42px] text-white font-normal uppercase'>Join Us Now<span className='font-sans'>!</span></p>
                 <div className='mt-4 flex flex-col items-center justify-center gap-1 lg:gap-5'>
-                    <img src={HorizontalLinesPNG} className='mt-[1px] mx-auto w-[90%] ' alt="" />
+                    <img src={HorizontalLinesPNG} className='mt-[1px] mx-auto w-[40%] ' alt="" />
                     <div className='flex items-center justify-center flex-col gap-1 lg:flex-row lg:gap-5'>
                         <p className='text-sm overflow-wrap px-3 lg:text-base font-semibold text-center' style={{ overflowWrap: 'anywhere' }}>
                             The future starts today. Dont miss out.
                         </p>
                     </div>
-                    <img src={HorizontalLinesPNG} className='w-[90%] ' />
+                    <img src={HorizontalLinesPNG} className='w-[40%] ' />
                 </div>
             </div>
+
 
             {/* Sections */}
             <div className='grid grid-cols-1 md:grid-cols-4 text-center px-20 md:px-40 lg:px-60 my-16'>

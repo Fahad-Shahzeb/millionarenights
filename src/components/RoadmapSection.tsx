@@ -1,5 +1,5 @@
 import React from 'react'
-import { BackIcon, FlagIcon, FlagPNG, LeftRightIcon, RoadMapDotsPNG, ShadedFlag } from '../assets'
+import { BackIcon, FlagPNG, RoadMapDotsPNG } from '../assets'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -50,9 +50,9 @@ const Card = ({ description, hr = true }: AboutUsProps) => (
 const SwiperCard = () => (
     <Swiper
         cssMode={true}
-        navigation={{
+        // navigation={{
 
-        }}
+        // }}
         pagination={{
 
         }}

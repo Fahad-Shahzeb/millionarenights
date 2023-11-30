@@ -1,6 +1,5 @@
 import React from 'react'
 import { IncomePNG, InvestmentPNG, LogoCoin_PNG, TransparencyPNG, ValuePNG } from '../assets'
-import { Seperator } from './Seperator';
 
 interface AdvantageBubbleProps {
     icon: string;
@@ -66,10 +65,10 @@ const AdvantagesSection = () => {
                                 </p>
                                 <p className='text-[22px] sm:text-[42px] leading-7 sm:leading-10 font-light uppercase m-0 text-center'>
                                     Steady<br />income simply<br />with the<br />
-                                    <p className='font-bold '>
+                                    <span className='font-bold '>
                                         Millionaire
                                         <span className='texttualgradient'>Nights</span>
-                                    </p>
+                                    </span>
                                     Token<span className='font-sans'>!</span>
                                 </p>
                                 <p className='w-[70%] text-base sm:text-2xl font-light  m-0 text-center'>

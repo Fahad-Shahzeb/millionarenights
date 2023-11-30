@@ -29,6 +29,8 @@ function GetInTouch() {
             </div>
             <div className='bg-[#202020] plain_input w-full py-4 rounded-[30px]'>
               <input
+                autoComplete='false'
+                id='name'
                 className=' bg-transparent placeholder-[#fff] sm:placeholder-[#202020] w-full px-4 text-white   '
                 placeholder='NAME'
               />
@@ -40,6 +42,8 @@ function GetInTouch() {
             </div>
             <div className='bg-[#202020] plain_input w-full py-4 rounded-[30px]'>
               <input
+                autoComplete='false'
+                id='email'
                 className=' bg-transparent placeholder-[#fff] sm:placeholder-[#202020] w-full px-4 text-white   '
                 placeholder='EMAIL'
               />
@@ -51,6 +55,8 @@ function GetInTouch() {
             </div>
             <div className='bg-[#202020] plain_input w-full py-4 rounded-[30px]'>
               <textarea
+                id='message'
+                autoComplete='false'
                 rows={10}
                 className='resize-none w-full py-2 placeholder-[#fff] sm:placeholder-[#202020] bg-transparent px-4 text-white  placeholder-shown:visible '
                 placeholder='MESSAGE'
