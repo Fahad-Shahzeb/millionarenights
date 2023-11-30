@@ -51,7 +51,7 @@ const AdvantagesSection = () => {
 
     return (
         <div className='mx-auto'>
-            <div className='my-16 px-8 text-white flex  gap-20 justify-center flex-col xl:flex-row bg-slate-0'>
+            <div className='my-16 px-16 text-white flex  gap-4 justify-center flex-col xl:flex-row bg-slate-0'>
                 <div className='flex flex-1 justify-center items-center'>
                     <div className='relative flex  text-white bg-[#0F0F0F] w-[300px] h-[350px] sm:w-[520px] sm:h-[700px] md:w-[628px] md:h-[856px]  justify-center items-center  rounded-[50px]'>
                         <div className='absolute  bg-[#5318D1] w-full -right-5  max-w-[40px] h-[250px] sm:h-[550px] md:h-[746px] rounded-[50px] z-[-10]' />
