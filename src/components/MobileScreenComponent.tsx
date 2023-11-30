@@ -9,7 +9,7 @@ const MobileScreenComponent = () => {
         <div className='my-24  text-white overflow-x-hidden'>
             <div className='flex justify-center items-center flex-col'>
                 <div>
-                    <p className='text-2xl md:text-4xl xl:text-5xl 2xl:text-7xl font-bold uppercase m-0 '>
+                    <p className='text-2xl text-center md:text-4xl xl:text-5xl 2xl:text-7xl font-bold uppercase m-0 '>
                         Millionaire
                         <span className='texttualgradient'>Nights</span>
                         <br />

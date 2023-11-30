@@ -69,6 +69,7 @@ const AdvantagesSection = () => {
                                         Millionaire
                                         <span className='texttualgradient'>Nights</span>
                                     </span>
+                                    <br />
                                     Token<span className='font-sans'>!</span>
                                 </p>
                                 <p className='w-[70%] text-base sm:text-2xl font-light  m-0 text-center'>
