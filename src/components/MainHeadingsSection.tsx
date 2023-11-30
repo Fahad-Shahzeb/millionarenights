@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { cryptonews, coincierge, coinspeaker, cointelegraph } from '../assets/pngs';
+import { coincierge, coinspeaker, cointelegraph, cryptonews } from '../assets';
 
 const MainHeadingSection = () => {
     const renderPNG = (src: string, key: number) => (
@@ -7,13 +7,12 @@ const MainHeadingSection = () => {
     );
     const [tabs, setTabs] = useState([cryptonews, coincierge, coinspeaker, cointelegraph]);
 
-    const allPNGS = [cryptonews, coincierge, coinspeaker, cointelegraph];
     useEffect(() => {
         if (window.innerWidth <= 1024 && window.innerWidth >= 768) {
-            setTabs(allPNGS.slice(0, 3));
+            setTabs(tabs.slice(0, 3));
         }
         else if (window.innerWidth <= 768) {
-            setTabs(allPNGS.slice(0, 2));
+            setTabs(tabs.slice(0, 2));
         } else {
 
         }
@@ -22,8 +21,7 @@ const MainHeadingSection = () => {
     return (
         <div className='w-full '>
             <div className='container mx-auto my-8'>
-                <div className='flex px-8 flex-row gap-2 justify-between 
-'>
+                <div className='flex px-8 flex-row gap-2 justify-between '>
                     {tabs.map((src, index) => renderPNG(src, index))}
                 </div>
             </div>

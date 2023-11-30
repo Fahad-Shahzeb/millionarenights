@@ -11,7 +11,7 @@ const AdvantagesSection = () => {
 
     const AdvantageBubble = ({ icon, title, subtitle }: AdvantageBubbleProps): JSX.Element => {
         return (
-            <div className='flex  gap-6 flex-col xl:flex-row justify-center items-center'>
+            <div className='flex  gap-6 flex-col 2xl:flex-row justify-center items-center'>
                 <div className=" inset-0 rounded-full  p-3 w-[150px] h-[150px]   flex justify-center items-center"
                     style={{
                         backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
@@ -19,8 +19,8 @@ const AdvantagesSection = () => {
                     <img src={icon} className='w-fit  h-fit' alt="" />
                 </div>
                 <div className='flex flex-1 justify-center flex-col w-full'>
-                    <p className='text-[18px] sm:text-[24px] xl:text-[28px] text-center font-normal antialiased uppercase'>{title}</p>
-                    <p className='text-[16px] sm:text-[24px] font-light text-center text-[#989898]'>{subtitle}</p>
+                    <p className='text-[18px] sm:text-[24px] xl:text-[28px] text-center 2xl:text-left font-normal antialiased uppercase'>{title}</p>
+                    <p className='text-[16px] sm:text-[24px] font-light text-center 2xl:text-left text-[#989898]'>{subtitle}</p>
                 </div>
             </div>
         )
@@ -51,7 +51,7 @@ const AdvantagesSection = () => {
 
     return (
         <div className='mx-auto'>
-            <div className='my-16 px-16 text-white flex  gap-4 justify-center flex-col xl:flex-row bg-slate-0'>
+            <div className='my-16 px-16 text-white flex  gap-4 justify-center flex-col 2xl:flex-row bg-slate-0'>
                 <div className='flex flex-1 justify-center items-center'>
                     <div className='relative flex  text-white bg-[#0F0F0F] w-[300px] h-[350px] sm:w-[520px] sm:h-[700px] md:w-[628px] md:h-[856px]  justify-center items-center  rounded-[50px]'>
                         <div className='absolute  bg-[#5318D1] w-full -right-5  max-w-[40px] h-[250px] sm:h-[550px] md:h-[746px] rounded-[50px] z-[-10]' />

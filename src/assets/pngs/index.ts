@@ -8,7 +8,7 @@ import LogoCoin_PNG from "./logo-coin.png";
 import cryptonews from "./cryptonews.png";
 import coincierge from "./coincierge.png";
 import coinspeaker from "./Coinspeaker.png";
-import cointelegraph from "./coincierge.png";
+import cointelegraph from "./ciontelegrph.png";
 import Ellipse30 from "./Ellipse30.png";
 import Ellipse28 from "./Ellipse28.png";
 import Logo from "./logo.png";
