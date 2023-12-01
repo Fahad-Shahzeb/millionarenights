@@ -13,7 +13,7 @@ const JoinUsSection = () => {
                             The future starts today. Dont miss out.
                         </p>
                     </div>
-                    <img src={HorizontalLinesPNG} className='w-[40%] ' />
+                    <img src={HorizontalLinesPNG} className='w-[40%] ' alt='' />
                 </div>
             </div>
 

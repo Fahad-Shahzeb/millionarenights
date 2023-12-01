@@ -38,7 +38,7 @@ const AboutUs = () => {
                 mixBlendMode: 'screen',
                 filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
               }}>
-              <img src={User2} className='object-cover w-full  h-full ' />
+              <img src={User2} className='object-cover w-full  h-full ' alt='' />
             </div>
             <div className='text-white'>
               <p className='antialiased text-base font-light'>Renato Bandli</p>

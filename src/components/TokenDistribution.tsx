@@ -101,7 +101,7 @@ const TokenDistribution = () => {
                                 (BSC Smart Chain)
                             </p>
                         </div>
-                        <img src={HorizontalLinesPNG} className='w-[90%] ' />
+                        <img src={HorizontalLinesPNG} className='w-[90%] ' alt='' />
                     </div>
                 </div>
                 <div className='hidden md:grid mt-16  2xl:grid-cols-4 grid-flow-row gap-8 mx-auto grid-cols-2'>

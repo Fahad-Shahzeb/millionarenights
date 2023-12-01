@@ -1,43 +1,35 @@
 import React from "react";
 import { Ellipse30, Logo, Ellipse28, Globe_PNG, ShadyDotsIcon2 } from "../assets/pngs";
 // import { millionairenight2nd } from "../assets/pngs";
-import dots from "../assets/pngs/dots.png";
-import { ShadyDotsIcon } from "../assets";
 const EllipseSection = () => {
-    const ellipseStyle = (url: string) => ({
-        backgroundImage: `url(${url})`,
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-    });
 
     return (
         <div className="h-[650px] sm:h-[950px] md:h-[1400px] lg:h-[1000px] flex xl:items-center  flex-row xl:flex-column my-20">
             <div className=" absolute">
                 <div className="max-w-[80%]">
-                    <img src={Ellipse30} />
+                    <img alt='' src={Ellipse30} />
                 </div>
 
                 <div>
                     <div className="w-[45%] absolute top-0 right-[35%] top-[20%] flex justify-center items-center">
                         <div className="w-[20%] absolute">
-                            <img className="" src={Logo} />
+                            <img alt='' className="" src={Logo} />
                         </div>
                         <div className="">
-                            <img className="" src={Ellipse28} />
+                            <img alt='' className="" src={Ellipse28} />
                         </div>
                     </div>
                     <div className="absolute top-0 right-[10%] max-w-[40%]">
-                        <img className="w-full" src={Globe_PNG} />
+                        <img alt='' className="w-full" src={Globe_PNG} />
                     </div>
                     <div className="w-[3%]  absolute top-[1.5%] left-[40%]">
-                        <img src={Ellipse28} />
+                        <img alt='' src={Ellipse28} />
                     </div>
                     <div className="w-[10%]  absolute bottom-[25%] right-[20%]">
-                        <img src={Ellipse28} />
+                        <img alt='' src={Ellipse28} />
                     </div>
                     <div className="w-[5%] absolute bottom-[-1.5%] right-[60%]">
-                        <img src={Ellipse28} />
+                        <img alt='' src={Ellipse28} />
                     </div>
                 </div>
             </div>
@@ -46,7 +38,7 @@ const EllipseSection = () => {
                 <div className="flex-1" />
                 <div className="hidden xl:block">
                     <p className="text-white">
-                        <img src={ShadyDotsIcon2} />
+                        <img alt='' src={ShadyDotsIcon2} />
                     </p>
                 </div>
                 <div className="flex-1 mt-[40%] xl:mt-0">

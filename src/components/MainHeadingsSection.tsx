@@ -16,7 +16,7 @@ const MainHeadingSection = () => {
         } else {
 
         }
-    }, []);
+    });
 
     return (
         <div className='w-full '>

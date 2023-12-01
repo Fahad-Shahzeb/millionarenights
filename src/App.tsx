@@ -31,7 +31,7 @@ function App() {
         setshowMenu(false);
       }
     };
-  }, []);
+  });
 
   return (
     <div className="relative overflow-hidden">

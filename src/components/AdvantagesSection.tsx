@@ -57,7 +57,7 @@ const AdvantagesSection = () => {
                         <div className='absolute  bg-[#5318D1] w-full -right-5  max-w-[40px] h-[250px] sm:h-[550px] md:h-[746px] rounded-[50px] z-[-10]' />
                         <div className='flex flex-col gap-5'>
                             <div className='hidden md:block absolute -left-[10%] rotate-[70deg] blur-[2px]'>
-                                <img src={LogoCoin_PNG} className='w-[130px] h-[130px] ' />
+                                <img src={LogoCoin_PNG} className='w-[130px] h-[130px] ' alt='' />
                             </div>
                             <div className='flex flex-col items-center justify-center gap-2 sm:gap-10'>
                                 <p className='text-[28px] sm:text-[42px]  font-normal uppercase antialiased m-0 text-center texttualgradient'>

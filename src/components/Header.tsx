@@ -8,6 +8,7 @@ const Header = ({ navBarHeadings, setshowMenu }: any) => {
                 <img
                     src={AppLogo_PNG}
                     className='w-14 h-w-14'
+                    alt=''
                 />
                 <div className='hidden lg2:flex justify-between w-full gap-[20px] transition-all'>
                     <div className='flex flex-row gap-[20px] ml-20'>
@@ -26,7 +27,7 @@ const Header = ({ navBarHeadings, setshowMenu }: any) => {
                 <button
                     onClick={() => setshowMenu()}
                     className='flex lg2:hidden border-none'>
-                    <img src={BurgerMenu} />
+                    <img src={BurgerMenu} alt='' />
                 </button>
             </div>
             <div className='hidden lg2:block'>

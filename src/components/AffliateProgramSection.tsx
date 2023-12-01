@@ -22,7 +22,7 @@ const AffliateProgramSection = () => {
 
             <div className='text-white mb-[-8px] hidden md:flex justify-start items-center mx-auto pr-5'>
                 <div className='relative hidden md:block'>
-                    <img src={AffliateProgramEllipsePNG} className='hidden md:block w-[60%] md:w-[90%]  lg:w-[80%] xl:w-[80%] 2xl:w-[90%] h-auto' />
+                    <img src={AffliateProgramEllipsePNG} className='hidden md:block w-[60%] md:w-[90%]  lg:w-[80%] xl:w-[80%] 2xl:w-[90%] h-auto' alt='' />
                     <div className='absolute top-[20%] md:top-[17%] lg:top-[20%] xl:top-[20%] 2xl:top-[30%] left-[30%] md:left-[17%] lg:left-[20%] xl:left-[20%] 2xl:left-[30%] '>
                         <AdvantageBubble />
                     </div>
@@ -60,7 +60,7 @@ const AffliateProgramSection = () => {
                         </p>
                         <div className=''>
                             <div className='absolute top-[50%] left-[-20%] overflow-hidden justify-center items-center w-[140%] -z-20'>
-                                <img src={CircleGradient} className='w-full' />
+                                <img src={CircleGradient} className='w-full' alt='' />
                             </div>
                         </div>
                         <div className='my-10'>
