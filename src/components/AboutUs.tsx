@@ -53,14 +53,14 @@ const AboutUs = () => {
             </p>
             <div className='flex gap-3 mb-3'>
               {socialIcons.map((item, index) => (
-                <div key={index} className=" inset-0 rounded-[100px] w-12 h-12 top-10 flex justify-center items-center"
+                <button key={index} className="cursor-pointer inset-0 rounded-[100px] w-12 h-12 top-10 flex justify-center items-center"
                   style={{
                     backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
                     mixBlendMode: 'screen',
                     filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
                   }}>
                   <SocialIcons mode={item} size={1} />
-                </div>
+                </button>
               ))}
             </div>
           </div>

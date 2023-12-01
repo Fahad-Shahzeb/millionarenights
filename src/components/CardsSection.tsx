@@ -44,11 +44,11 @@ const CardsSection = () => {
                                 of features to help you find your ideal partner.
                             </p>
                         </div>
-                        <div className=' bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black'>
+                        <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black'>
                             <p className='text-base font-normal antialiased'>
                                 Buy <span className='font-sans'>$</span>Millionaire
                             </p>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
@@ -87,11 +87,11 @@ const CardsSection = () => {
                                 services.{" "}
                             </p>
                         </div>
-                        <div className=' bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black'>
+                        <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black'>
                             <p className='text-base font-normal antialiased'>
                                 Buy <span className='font-sans'>$</span>Millionaire
                             </p>
-                        </div>
+                        </button>
                     </div>
                     <div className='absolute xs:-right-12 xs:top-40 lg:-right-36 lg:top-32 '>
                         <img

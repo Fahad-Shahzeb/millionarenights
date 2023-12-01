@@ -16,3 +16,4 @@ export * from "./RoadmapSection";
 export * from "./AboutUs";
 export * from "./AffliateProgramSection";
 export * from "./Footer";
+export * from "./CircularAnimation";

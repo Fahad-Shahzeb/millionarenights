@@ -1,5 +1,6 @@
 import React from "react";
 import { Ellipse30, Logo, Ellipse28, Globe_PNG, ShadyDotsIcon2 } from "../assets/pngs";
+import { CircularAnimation } from "./CircularAnimation";
 // import { millionairenight2nd } from "../assets/pngs";
 const EllipseSection = () => {
 
@@ -22,6 +23,7 @@ const EllipseSection = () => {
                     <div className="absolute top-0 right-[10%] max-w-[40%]">
                         <img alt='' className="w-full" src={Globe_PNG} />
                     </div>
+
                     <div className="w-[3%]  absolute top-[1.5%] left-[40%]">
                         <img alt='' src={Ellipse28} />
                     </div>
@@ -60,7 +62,7 @@ const EllipseSection = () => {
                                 </p>
                             </div>
                             <div className="text-center">
-                                <button className="bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 rounded-3xl py-2 text-black w-[180px]">
+                                <button className="cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 rounded-3xl py-2 text-black w-[180px]">
                                     Buy $MillionAire
                                 </button>
                             </div>

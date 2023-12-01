@@ -1,7 +1,7 @@
 import React from "react";
 import { AppLogo_PNG, BurgerMenu, ShadyDotsIcon } from "../assets";
 
-const Header = ({ navBarHeadings, setshowMenu }: any) => {
+const Header = ({ navBarHeadings, setshowMenu, scrollToSection }: any) => {
     return (
         <div className='absolute top-0 left-0 w-full z-50'>
             <div className='flex flex-1 py-5 px-10 justify-between items-center'>
@@ -14,13 +14,14 @@ const Header = ({ navBarHeadings, setshowMenu }: any) => {
                     <div className='flex flex-row gap-[20px] ml-20'>
                         {navBarHeadings.map((item: any, index: number) => (
                             <button
+                                onClick={() => scrollToSection(index)}
                                 key={index}
-                                className='border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light h-full text-center w-[143px]'>
+                                className='cursor-pointer border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light h-full text-center w-[143px]'>
                                 {item}
                             </button>
                         ))}
                     </div>
-                    <button className='hidden lg:block border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light h-full text-center w-[143px]'>
+                    <button onClick={() => scrollToSection(5)} className='cursor-pointer hidden lg:block border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light h-full text-center w-[143px] z-50'>
                         {"Contact"}
                     </button>
                 </div>

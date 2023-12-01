@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Header,
   HeroSection,
@@ -18,9 +18,11 @@ import {
   Footer,
   RoadmapSection,
   JoinUsSection,
+  CircularAnimation,
 } from "./components";
 
 const navBarHeadings = ["Home", "About", "How to Buy", "Tokenomics", "Roadmap"];
+const indexes = ["home", "aboutus", "howtobuy", "tokenomics", "roadmap", "contact"];
 
 function App() {
   const [showMenu, setshowMenu] = useState(false);
@@ -33,8 +35,16 @@ function App() {
     };
   });
 
+  const scrollToSection = (index: number) => {
+    var element = document.getElementById(indexes[index]);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    }
+  };
+
+
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-x-hidden">
       <ThemeGradient />
       <div className='relative flex flex-1 flex-col z-50'>
         <Header
@@ -42,11 +52,12 @@ function App() {
           setshowMenu={() => {
             setshowMenu(!showMenu)
           }}
+          scrollToSection={scrollToSection}
         />
         {showMenu && (
           <div className='w-screen h-screen bg-[#ccc] flex flex-col gap-4 justify-center items-center'>
             {navBarHeadings.map((item) => (
-              <button className='border-[1.5px] border-[#44444499] rounded-2xl px-4 py-2 text-lg text-black text-center w-[143px]'>
+              <button className='cursor-pointer border-[1.5px] border-[#44444499] rounded-2xl px-4 py-2 text-lg text-black text-center w-[143px]'>
                 {item}
               </button>
             ))}
@@ -54,8 +65,11 @@ function App() {
         )}
         {!showMenu && (
           <div className="relative">
-            <HeroSection />
-            <Seperator version='basic' />
+            <div id="home">
+              <HeroSection />
+              <Seperator version='basic' />
+            </div>
+
             <MainHeadingSection />
             <Seperator version='basic' />
             <EllipseSection />
@@ -66,24 +80,42 @@ function App() {
             <AdvantagesSection />
             <Seperator version='partial' />
             <AffliateProgramSection />
-            <OfferSection />
-            <Seperator version='basic' />
+
+            <div id="howtobuy">
+              <OfferSection />
+              <Seperator version='basic' />
+            </div>
+
             <JoinUsSection />
-            <TokenDistribution />
-            <Seperator version='basic' />
-            <RoadmapSection />
-            <Seperator version='basic' />
-            <AboutUs />
-            <Seperator version='basic' />
+
+            <div id="tokenomics">
+              <TokenDistribution />
+              <Seperator version='basic' />
+            </div>
+
+            <div id="roadmap">
+              <RoadmapSection />
+              <Seperator version='basic' />
+            </div>
+
+            <div id="aboutus">
+              <AboutUs />
+              <Seperator version='basic' />
+            </div>
+
             <FAQ />
             <Seperator version='basic' />
-            <GetInTouch />
-            <Seperator version='basic' />
+
+            <div id="contact">
+              <GetInTouch />
+              <Seperator version='basic' />
+            </div>
             <Footer />
           </div>
-        )}
-      </div>
-    </div>
+        )
+        }
+      </div >
+    </div >
   );
 }
 

@@ -22,7 +22,7 @@ const OfferSection = () => {
                         <span className='font-sans'>!</span>
                     </p>
                     <div className='flex mt-5 gap-3 '>
-                        <div className='text-center flex '>
+                        {/* <div className='text-center flex '>
                             <button className='bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-2 rounded-full py-2 antialiased  text-sm md:text-[16px] xl:text-[18px]  font-semibold text-black'>
                                 Buy <span className='font-sans'>$</span>MillionAire
                             </button>
@@ -30,6 +30,16 @@ const OfferSection = () => {
                         <div className='text-center flex  rounded-full p-[2px] bg-gradient-to-t from-[#775CF4] to-[#C85EF7]  '>
                             <button className='px-2 rounded-full text-white  w-full h-full bg-black antialiased  text-sm md:text-[16px] xl:text-[18px] font-semibold'>
                                 Read More
+                            </button>
+                        </div> */}
+                        <div className='mt-4 flex justify-end items-center flex-1  w-full gap-3'>
+                            <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
+                                <p className=' text-base justify-center text-center font-normal  antialiased'>Buy  <span className='font-sans'> $</span>MillionAire</p>
+                            </button>
+                            <button
+                                style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
+                                className='cursor-pointer py-3 flex items-center justify-center px-4  text-white rounded-[30px]'>
+                                <p className=' text-base text-center font-normal antialiased'>Read more</p>
                             </button>
                         </div>
                     </div>

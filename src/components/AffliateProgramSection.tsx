@@ -37,14 +37,14 @@ const AffliateProgramSection = () => {
                         <p className='text:xl hidden md:block lg:text-2xl font-light leading-7 text-right w-[80%]'>Share your personalised link with your friends, family and network to be rewarded.</p>
                         <div className='w-full hidden md:block'>
                             <div className='mt-4 flex justify-end items-center flex-1  w-full gap-3'>
-                                <div className='bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
+                                <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
                                     <p className=' text-base justify-center text-center font-normal  antialiased'>Buy  <span className='font-sans'> $</span>MillionAire</p>
-                                </div>
-                                <div
+                                </button>
+                                <button
                                     style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                                    className=' py-3 flex items-center justify-center px-4   rounded-[30px]'>
+                                    className='cursor-pointer py-3 flex items-center justify-center px-4   rounded-[30px]'>
                                     <p className=' text-base text-center font-normal antialiased'>Read more</p>
-                                </div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -70,14 +70,14 @@ const AffliateProgramSection = () => {
                             <p className='text:xl  font-light leading-7 text-center w-[80%]'>Share your personalised link with your friends, family and network to be rewarded.</p>
                             <div className=' w-[80%] flex items-center justify-center'>
                                 <div className='mt-4 flex justify-center items-center flex-1  w-full gap-3'>
-                                    <div className='bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
+                                    <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
                                         <p className=' text-sm  text-center font-normal  antialiased'>Buy  <span className='font-sans'> $</span>MillionAire</p>
-                                    </div>
-                                    <div
+                                    </button>
+                                    <button
                                         style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                                        className=' py-3 flex items-center justify-center px-4   rounded-[30px]'>
+                                        className='cursor-pointer py-3 flex items-center justify-center px-4   rounded-[30px]'>
                                         <p className=' text-sm text-center font-normal antialiased'>Read more</p>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>

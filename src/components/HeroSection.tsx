@@ -28,13 +28,13 @@ const HeroSection = () => {
                             </div>
                             <div className='flex gap-3 '>
                                 {socialIcons.map((item, index) => (
-                                    <div key={index} className=" inset-0 rounded-[100px] w-12 h-12 top-10 flex justify-center items-center"
+                                    <button key={index} className="cursor-pointer inset-0 rounded-[100px] w-12 h-12 top-10 flex justify-center items-center"
                                         style={{
                                             backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
                                         }}>
                                         <SocialIcons mode={item} size={1} />
 
-                                    </div>
+                                    </button>
                                 ))}
                             </div>
                         </div>
@@ -97,14 +97,14 @@ const HeroSection = () => {
                                 </div>
                             </div>
                             <div className='mt-4 flex justify-between items-center flex-1  w-[280px] md:w-full gap-2 sm:gap-3'>
-                                <div
+                                <button
                                     style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                                    className=' py-3  flex items-center justify-center px-1 md:px-4   w-[133px] sm:w-full rounded-[30px]'>
+                                    className='cursor-pointer py-3  flex items-center justify-center px-1 md:px-4   w-[133px] sm:w-full rounded-[30px]'>
                                     <p className='text-sm 2xl:text-base text-center font-normal antialiased '>Connect wallet</p>
-                                </div>
-                                <div className='py-3 bg-gradient-to-t from-[#775CF4] to-[#C85EF7] flex items-center justify-center px-1  md:px-4 bg-[#fff]/[0.07]  w-[133px] sm:w-full  rounded-[30px]'>
+                                </button>
+                                <button className='cursor-pointer py-3 bg-gradient-to-t from-[#775CF4] to-[#C85EF7] flex items-center justify-center px-1  md:px-4 bg-[#fff]/[0.07]  w-[133px] sm:w-full  rounded-[30px]'>
                                     <p className=' text-sm 2xl:text-base text-center font-normal antialiased w-full'>Buy Crypto</p>
-                                </div>
+                                </button>
                             </div>
                         </div>
                     </div>

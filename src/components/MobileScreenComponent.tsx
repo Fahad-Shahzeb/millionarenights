@@ -40,11 +40,11 @@ const MobileScreenComponent = () => {
                         privileged. 2024, Monaco - Tickets available soon!
                     </p>
                 </div>
-                <div className='mt-6 md:my-10 bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black'>
+                <button className='cursor-pointer mt-6 md:my-10 bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black'>
                     <p className='text-lg font-semibold antialiased'>
                         Buy <span className='font-sans'>$</span>Millionaire
                     </p>
-                </div>
+                </button>
             </div>
         </div>
     );
