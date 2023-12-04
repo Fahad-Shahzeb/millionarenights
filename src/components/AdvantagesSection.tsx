@@ -11,16 +11,16 @@ const AdvantagesSection = () => {
 
     const AdvantageBubble = ({ icon, title, subtitle }: AdvantageBubbleProps): JSX.Element => {
         return (
-            <div className='flex  gap-6 flex-col 2xl:flex-row justify-center items-center'>
+            <div className='flex  gap-6 flex-col lg3:flex-row justify-center items-center '>
                 <div className=" inset-0 rounded-full  p-3 w-[150px] h-[150px]   flex justify-center items-center"
                     style={{
                         backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
                     }}>
                     <img src={icon} className='w-fit  h-fit' alt="" />
                 </div>
-                <div className='flex flex-1 justify-center flex-col w-full'>
-                    <p className='text-[18px] sm:text-[24px] xl:text-[28px] text-center 2xl:text-left font-normal antialiased uppercase'>{title}</p>
-                    <p className='text-[16px] sm:text-[24px] font-light text-center 2xl:text-left text-[#989898]'>{subtitle}</p>
+                <div className='flex  justify-center flex-col w-[270px] md:w-[400px]'>
+                    <p className='text-[18px] sm:text-[28px] xl:text-[28px] text-center lg3:text-left font-normal antialiased uppercase'>{title}</p>
+                    <p className='text-[14px] sm:text-[16px] font-light text-center lg3:text-left text-[#989898]'>{subtitle}</p>
                 </div>
             </div>
         )
@@ -51,8 +51,8 @@ const AdvantagesSection = () => {
 
     return (
         <div className='mx-auto'>
-            <div className='my-16 px-16 text-white flex  gap-4 justify-center flex-col 2xl:flex-row bg-slate-0'>
-                <div className='flex flex-1 justify-center items-center'>
+            <div className='my-16 mx-auto px-12 text-white flex  gap-24 justify-center flex-col lg3:flex-row bg-slate-0'>
+                <div className='flex flex-1 justify-center lg3:justify-end items-center'>
                     <div className='relative flex  text-white bg-[#0F0F0F] w-[300px] h-[350px] sm:w-[520px] sm:h-[700px] md:w-[628px] md:h-[856px]  justify-center items-center  rounded-[50px]'>
                         <div className='absolute  bg-[#5318D1] w-full -right-5  max-w-[40px] h-[250px] sm:h-[550px] md:h-[746px] rounded-[50px] z-[-10]' />
                         <div className='flex flex-col gap-5'>
@@ -79,7 +79,7 @@ const AdvantagesSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-1 flex-col gap-10 self-center justify-between w-[70%] lg:w-full '>
+                <div className='flex flex-1 flex-col gap-10 self-center items-center lg3:items-start justify-start w-[70%] lg:w-full '>
                     {details.map((item, index) => <AdvantageBubble key={index} icon={item.icon} title={item.title} subtitle={item.subtitle} />)}
                 </div>
             </div>

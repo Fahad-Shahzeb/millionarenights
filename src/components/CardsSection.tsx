@@ -28,11 +28,11 @@ const CardsSection = () => {
                                 // className='self-center xs:w-[320px]'
                                 alt=''
                             />
-                            <p className='text-[42px] xs:text-2xl font-bold uppercase m-0 w-full text-center'>
+                            <p className='md:text-[42px] leading-10 text-2xl font-bold uppercase m-0 w-full text-center'>
                                 Millionaire
                                 <span className='texttualgradient'>Nights</span>
                                 <br />
-                                <span className='mt-[-15px] xs:-mt-1 xs:text-2xl font-light text-center uppercase'>
+                                <span className=' font-light text-center uppercase'>
                                     Dating
                                 </span>
                             </p>
@@ -60,8 +60,6 @@ const CardsSection = () => {
                             style={{
                                 backgroundImage:
                                     "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)",
-                                mixBlendMode: "screen",
-                                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
                             }}>
                             <p className='font-semibold sm:text-sm xs:text-[9px] text-[#5318D1] text-center'>
                                 Coming Soon
@@ -72,10 +70,10 @@ const CardsSection = () => {
                         <div className='flex flex-col items-center justify-center gap-3'>
                             <img
                                 src={CardsSection2}
-                                className='self-center xs:w-[290px]'
+                                className='self-center xs:-mt-20'
                                 alt=''
                             />
-                            <p className=' text-[42px] xs:text-2xl font-light text-center uppercase'>
+                            <p className='leading-10 md:text-[42px] text-2xl font-light text-center uppercase'>
                                 Luxury
                                 <br />
                                 <span className='mt-[-15px] xs:mt-0'> Marketplace</span>
@@ -93,7 +91,7 @@ const CardsSection = () => {
                             </p>
                         </button>
                     </div>
-                    <div className='absolute xs:-right-12 xs:top-40 lg:-right-36 lg:top-32 '>
+                    <div className='absolute -right-10 top-40  '>
                         <img
                             src={DollarCoin_PNG}
                             className='w-[200px] xs:w-[90px] h-[211px] xs:h-[94.7px]'

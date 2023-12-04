@@ -5,14 +5,14 @@ import { CircularAnimation } from "./CircularAnimation";
 const EllipseSection = () => {
 
     return (
-        <div className="h-[650px] sm:h-[950px] md:h-[1400px] lg:h-[1000px] flex xl:items-center  flex-row xl:flex-column my-20">
+        <div className="h-[650px] sm:h-[950px] md:h-[1400px] lg:h-[1000px] flex xl:items-center  flex-row xl:flex-column ">
             <div className=" absolute">
                 <div className="max-w-[80%]">
                     <img alt='' src={Ellipse30} />
                 </div>
 
                 <div>
-                    <div className="w-[45%] absolute top-0 right-[35%] top-[20%] flex justify-center items-center">
+                    <div className="w-[45%] absolute  right-[35%] top-[20%] flex justify-center items-center">
                         <div className="w-[20%] absolute">
                             <img alt='' className="" src={Logo} />
                         </div>
@@ -46,14 +46,16 @@ const EllipseSection = () => {
                 <div className="flex-1 mt-[40%] xl:mt-0">
                     <div className="flex justify-center">
                         <div className="flex flex-col justify-center item-center">
-                            <div className="mb-4 text-white text-[24px] md:text-[42px] max-w-[500px] text-center uppercase">
+                            <div className="mb-4 leading-10 text-white text-[24px] md:text-[42px] max-w-[500px] text-center uppercase font-light">
                                 <h1>
-                                    Discover the <br /> Millionaire
-                                    <span className="text-[#46225C]">Nights</span> Token!
+                                    Discover the <br />
+                                    <span className="font-bold">Millionaire  <span className='texttualgradient'>Nights</span></span>
+                                    <br />
+                                    Token!
                                 </h1>
                             </div>
                             <div className="mb-4 text-white max-w-[500px]">
-                                <p className="text-center text-[14px] md:text-[16px]">
+                                <p className="text-center text-[#989898] text-[14px] md:text-[16px] font-light">
                                     MillionaireNights is using the power of blockchain technology
                                     to offer a unique opportunity to get involved in a dynamic and
                                     growing industry. Enjoy a combination of dating, luxury
@@ -62,8 +64,8 @@ const EllipseSection = () => {
                                 </p>
                             </div>
                             <div className="text-center">
-                                <button className="cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 rounded-3xl py-2 text-black w-[180px]">
-                                    Buy $MillionAire
+                                <button className="cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 rounded-3xl py-2 text-black ">
+                                    <p className="text-lg text-center font-semibold">Buy $MillionAire</p>
                                 </button>
                             </div>
                         </div>

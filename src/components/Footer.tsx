@@ -3,7 +3,7 @@ import { Gradient_5 } from '../assets'
 
 const Footer = () => {
     return (
-        <div className='relative'>
+        <div className='relative ' >
             <div className=' py-8'>
                 <p className='text-white text-center text-sm font-light'>Millionairenights <span className='font-sans'>-</span> All rights reserved!</p>
             </div>

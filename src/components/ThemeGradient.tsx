@@ -10,20 +10,20 @@ const ThemeGradient = () => {
                 <div className={`absolute  left-0  z-[-1]`}>
                     <img alt='' src={Gradient_1} className={`w-[90%]`} />
                 </div>
-                <div className={`absolute -top-[20rem] -right-[155rem]  z-[-1]`}>
+                <div className={`absolute -top-[5rem] -right-[155rem]  z-[-1]`}>
                     <img alt='' src={Gradient_2} className={``} />
                 </div>
-                <div className={`absolute top-[190rem] -right-[160rem]  z-[-1]`}>
+                <div className={`absolute top-[220rem] -right-[170rem]  z-[-1]`}>
                     <img alt='' src={Gradient_3} className={``} />
                 </div>
-                <div className={`absolute top-[440rem] -right-[70rem]  z-[-1]`}>
+                <div className={`absolute top-[485rem] -right-[70rem]  z-[-1]`}>
                     <img alt='' src={Gradient_4} className={``} />
                 </div>
                 {/* Left Side */}
-                <div className={`absolute top-[150rem] -left-[100rem]  z-[-1]`}>
+                <div className={`absolute top-[160rem] -left-[110rem]  z-[-1]`}>
                     <img alt='' src={Gradient_5} className={`w-[90%]`} />
                 </div>
-                <div className={`absolute top-[330rem] -left-[60rem]  z-[-1]`}>
+                <div className={`absolute top-[360rem] -left-[60rem]  z-[-1]`}>
                     <img alt='' src={Gradient_5} className={`w-[70%]`} />
                 </div>
             </div>
@@ -53,7 +53,7 @@ const ThemeGradient = () => {
                 <div className={`absolute top-[570rem] -left-[35rem]  z-[-1] `}>
                     <img alt='' src={Gradient_5} className={`w-[100%] `} />
                 </div>
-                <div className={`absolute top-[720rem] -left-[35rem]  z-[-1] `}>
+                <div className={`absolute top-[740rem] -left-[35rem]    z-[-1] `}>
                     <img alt='' src={Gradient_5} className={`w-[100%] `} />
                 </div>
             </div>

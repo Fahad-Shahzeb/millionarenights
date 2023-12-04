@@ -7,6 +7,7 @@ module.exports = {
         600: "600px",
         xs: "360px",
         lg2: "1140px",
+        lg3: "1440px",
       },
     },
   },

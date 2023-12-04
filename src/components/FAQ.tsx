@@ -32,14 +32,13 @@ const AddIcon = () => {
 const FAQ = () => {
   const faqData = [
     {
-      question:
-        'HOW DO I BUY A ŠMILLIONAIRE NIGHTSTOKEN?',
+      question: <p >HOW DO I BUY A ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> TOKEN?</p>,
+      // 'HOW DO I BUY A ŠMILLIONAIRE NIGHTSTOKEN?',
       answer:
         'SMillion Aire can only be purchased on our official website [Image of ŠMILLIONAIRENIGHTS website] with BNR ETH USDT KERC-20) USDC (ERC-20) BUSD (BEP-20)L USDI (BEP-20).or.credit card at our partner through Transak',
     },
     {
-      question:
-        'WHAT IS THE DIFFERENCE BETWEEN MILLIONAIRENIGHTS AND OTHER DATING PLATFORMS?',
+      question: <p>WHAT IS THE DIFFERENCE BETWEEN ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> AND OTHER DATING PLATFORMS?</p>,
       answer:
         'SMillion Aire is a new dating platform that focuses on connecting people with similar financial goals. It is different from other dating platforms in that it offers a variety of features that are specifically designed for millionaires and billionaires, such as a luxury marketplace and a private jet service.',
     },
@@ -49,7 +48,7 @@ const FAQ = () => {
         'You will be paid out on the first of each month, directly to your bank account.',
     },
     {
-      question: 'WHAT MAKES MILLIONAIRENIGHTS SUSTAINABLE IN THE LONG-TERM?',
+      question: <p>WHAT MAKES ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> SUSTAINABLE IN THE LONG-TERM?</p>,
       answer:
         "SMillion Aire is sustainable in the long-term because it is based on a subscription model. This means that users pay a monthly fee to access the platform's features. This revenue stream will allow SMillion Aire to continue to invest in its platform and grow its user base.",
     },

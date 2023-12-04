@@ -7,11 +7,15 @@ const AffliateProgramSection = () => {
 
     const AdvantageBubble = (): JSX.Element => {
         return (<div className='flex gap-10 z-40'>
-            <div className=" inset-0 rounded-full w-[200px] h-[200px]   md:w-[230px] md:h-[230px]  lg:w-[260px] lg:h-[260px]  xl:w-[311px] xl:h-[311px] flex justify-center items-center"
+            <div className=" inset-0 rounded-full
+                w-[200px] h-[200px]  
+                lg2:w-[260px] lg2:h-[260px]
+                2xl:w-[311px] 2xl:h-[311px] 
+                flex justify-center items-center"
                 style={{
-                    backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
+                    backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 75.35%, #5318D1 100%)',
                 }}>
-                <p className='text-center font-semibold w-[60%] text-sm md:text-base lg:text-lg xl:text-xl antialiased leading-5 '>Get a 20<span className='font-sans'>%</span> bonus and an additional 10<span className='font-sans'>%</span> ongoing passive income after every referred investor<span className='font-sans'>!</span> </p>
+                <p className='text-center font-semibold px-[15%] text-xs md:text-sm  lg2:text-lg  2xl:text-2xl '>Get a 20<span className='font-sans'>%</span> bonus and an additional 10<span className='font-sans'>%</span> ongoing passive income after every referred investor<span className='font-sans'>!</span> </p>
             </div>
         </div>
         )
@@ -23,7 +27,7 @@ const AffliateProgramSection = () => {
             <div className='text-white mb-[-8px] hidden md:flex justify-start items-center mx-auto pr-5'>
                 <div className='relative hidden md:block'>
                     <img src={AffliateProgramEllipsePNG} className='hidden md:block w-[60%] md:w-[90%]  lg:w-[80%] xl:w-[80%] 2xl:w-[90%] h-auto' alt='' />
-                    <div className='absolute top-[20%] md:top-[17%] lg:top-[20%] xl:top-[20%] 2xl:top-[30%] left-[30%] md:left-[17%] lg:left-[20%] xl:left-[20%] 2xl:left-[30%] '>
+                    <div className='absolute top-[20%] md:top-[17%] lg:top-[20%] xl:top-[20%] 2xl:top-[23%] left-[30%] md:left-[17%] lg:left-[20%] xl:left-[20%] 2xl:left-[23%] '>
                         <AdvantageBubble />
                     </div>
                 </div>
@@ -42,7 +46,7 @@ const AffliateProgramSection = () => {
                                 </button>
                                 <button
                                     style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                                    className='cursor-pointer py-3 flex items-center justify-center px-4   rounded-[30px]'>
+                                    className='gradient-hover-effect cursor-pointer py-3 flex items-center justify-center px-4   rounded-[30px]'>
                                     <p className=' text-base text-center font-normal antialiased'>Read more</p>
                                 </button>
                             </div>
@@ -67,7 +71,7 @@ const AffliateProgramSection = () => {
                             <AdvantageBubble />
                         </div>
                         <div className='flex flex-col items-center justify-center '>
-                            <p className='text:xl  font-light leading-7 text-center w-[80%]'>Share your personalised link with your friends, family and network to be rewarded.</p>
+                            <p className='text-sm md:text-xl  font-light leading-5 text-center w-[80%]'>Share your personalised link with your friends, family and network to be rewarded.</p>
                             <div className=' w-[80%] flex items-center justify-center'>
                                 <div className='mt-4 flex justify-center items-center flex-1  w-full gap-3'>
                                     <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
@@ -75,7 +79,7 @@ const AffliateProgramSection = () => {
                                     </button>
                                     <button
                                         style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                                        className='cursor-pointer py-3 flex items-center justify-center px-4   rounded-[30px]'>
+                                        className='gradient-hover-effect cursor-pointer py-3 flex items-center justify-center px-4 rounded-[30px]'>
                                         <p className=' text-sm text-center font-normal antialiased'>Read more</p>
                                     </button>
                                 </div>

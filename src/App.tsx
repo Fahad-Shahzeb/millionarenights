@@ -20,8 +20,10 @@ import {
   JoinUsSection,
   CircularAnimation,
 } from "./components";
+import { Gradient_1, RoadMapDotsPNG, ShadyDotsIcon } from "./assets";
+import { useIsInViewport } from "./utils";
 
-const navBarHeadings = ["Home", "About", "How to Buy", "Tokenomics", "Roadmap"];
+const navBarHeadings = ["Home", "About", "How to Buy", "Tokenomics", "Roadmap", 'Contact'];
 const indexes = ["home", "aboutus", "howtobuy", "tokenomics", "roadmap", "contact"];
 
 function App() {
@@ -41,26 +43,39 @@ function App() {
       element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
     }
   };
-
+  const ref1 = useRef(null);
+  const isInViewport1 = useIsInViewport(ref1);
 
   return (
-    <div className="relative overflow-x-hidden">
+    <div className="relative overflow-hidden">
       <ThemeGradient />
       <div className='relative flex flex-1 flex-col z-50'>
+        {showMenu && <div className={`absolute w-[140%] h-[80%] left-0  z-[10]`}>
+          <img alt='' src={Gradient_1} className={`w-[100%] h-[100%]`} />
+        </div>}
         <Header
-          navBarHeadings={navBarHeadings}
+          navBarHeadings={navBarHeadings.slice(0, 5)}
           setshowMenu={() => {
             setshowMenu(!showMenu)
           }}
           scrollToSection={scrollToSection}
         />
         {showMenu && (
-          <div className='w-screen h-screen bg-[#ccc] flex flex-col gap-4 justify-center items-center'>
-            {navBarHeadings.map((item) => (
-              <button className='cursor-pointer border-[1.5px] border-[#44444499] rounded-2xl px-4 py-2 text-lg text-black text-center w-[143px]'>
-                {item}
-              </button>
+          <div className='relative w-screen h-screen bg-[#000] flex flex-col justify-center items-center '>
+            {navBarHeadings.map((item, index) => (
+              <div className="w-[50%] cursor-pointer flex flex-col justify-center items-center z-40">
+                <button onClick={() => { scrollToSection(index) }} className='cursor-pointer px-4 py-8 text-lg text-white text-center w-[143px]'>
+                  <p className="text-base font-normal">{item}</p>
+                </button>
+                {index < 5 && <hr className='line  bg-[#fff]/[0.3]' />}
+                {index == 5 &&
+                  <div className="mt-10">
+                    <img src={RoadMapDotsPNG} className="w-32 h-32 rotate-90" alt="" />
+                  </div>
+                }
+              </div>
             ))}
+
           </div>
         )}
         {!showMenu && (
@@ -86,7 +101,9 @@ function App() {
               <Seperator version='basic' />
             </div>
 
-            <JoinUsSection />
+            <div ref={ref1}>
+              <JoinUsSection isInViewport1={isInViewport1} />
+            </div>
 
             <div id="tokenomics">
               <TokenDistribution />
@@ -110,6 +127,7 @@ function App() {
               <GetInTouch />
               <Seperator version='basic' />
             </div>
+
             <Footer />
           </div>
         )

@@ -364,3 +364,20 @@ progress {
   height: 40%;
   object-fit: cover;
 }
+
+.gradient-hover-effect {
+  display: flex;
+  font-family: inherit;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.6s;
+  place-content: center;
+}
+.gradient-hover-effect:hover {
+  background-color: #775cf4;
+  color: #fff;
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+}
