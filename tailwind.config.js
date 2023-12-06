@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -8,6 +10,10 @@ module.exports = {
         xs: "360px",
         lg2: "1140px",
         lg3: "1440px",
+      },
+      fontFamily: {
+        SonyGothic: ["SonyGothic", ...defaultTheme.fontFamily.sans],
+        sans: ["SonyGothic", ...defaultTheme.fontFamily.sans],
       },
     },
   },

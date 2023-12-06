@@ -16,13 +16,13 @@ const Header = ({ navBarHeadings, setshowMenu, scrollToSection }: any) => {
                             <button
                                 onClick={() => scrollToSection(index)}
                                 key={index}
-                                className='gradient-hover-effect cursor-pointer border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light h-full text-center w-[143px]'>
+                                className='gradient-hover-effect cursor-pointer border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light text-center w-[143px] h-[45px] flex justify-center items-center'>
                                 {item}
                             </button>
 
                         ))}
                     </div>
-                    <button onClick={() => scrollToSection(5)} className='gradient-hover-effect cursor-pointer hidden lg:block border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light h-full text-center w-[143px] z-50'>
+                    <button onClick={() => scrollToSection(5)} className='gradient-hover-effect cursor-pointer hidden lg:flex border-[2px] border-[#B8A8D8] px-5 py-1 rounded-full text-white text-[16px] font-light text-center w-[143px] z-50 h-[45px] justify-center items-center'>
                         {"Contact"}
                     </button>
                 </div>

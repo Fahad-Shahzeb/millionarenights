@@ -6,7 +6,7 @@ const HeroSection = () => {
     const socialIcons: mode[] = ['facebook', 'instagram', 'twitter', 'vimeo']
 
     return (
-        <div className='py-4 px-8 my-16 w-screen'>
+        <div className='py-4 px-8 my-40 w-screen'>
             <div className='flex flex-col  lg2:flex-row items-center justify-center gap-5 w-full text-white '>
 
                 {/* div1 */}
@@ -24,7 +24,7 @@ const HeroSection = () => {
                         <div className='flex justify-center flex-col sm:flex-row lg2:justify-start items-center lg2:text-left w-full gap-7 mt-[32px]'>
                             <div
                                 className='bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 rounded-3xl py-2 text-black'>
-                                <p className='text-base font-normal antialiased'>White Paper</p>
+                                <p className='text-sm md:text-lg font-semibold antialiased'>White Paper</p>
                             </div>
                             <div className='flex gap-3 '>
                                 {socialIcons.map((item, index) => (
