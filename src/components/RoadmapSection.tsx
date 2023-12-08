@@ -25,9 +25,9 @@ const Flag = () => (
 const Card = ({ description, hr = true }: AboutUsProps) => (
     <div className='relative mt-8 flex justify-center items-center gap-4 '>
         <div className='mt-10 relative flex items-center justify-center'>
-            <div className='absolute -mt-2 2xl:-mt-4 top-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-t-[15px] 2xl:rounded-t-[30px] z-[-10]' />
-            <div className='absolute -mb-1 -bottom-1 2xl:-bottom-[10px]  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-b-[15px] 2xl:rounded-b-[30px] z-[-10]' />
-            <div className='p-4 2xl:p-[30px] flex items-center justify-center gap-4 flex-col bg-[#0F0F0F] text-center rounded-[30px] 2xl:rounded-[50px] w-full
+            <div className='absolute -mt-3 top-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-t-[15px] 2xl:rounded-t-[30px] z-[-10]' />
+            <div className='absolute -mb-3  bottom-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-b-[15px] 2xl:rounded-b-[30px] z-[-10]' />
+            <div className='p-4 2xl:p-[30px] flex items-center justify-center gap-4 flex-col bg-[#0F0F0F] text-center rounded-[20px] 2xl:rounded-[20px] w-full
             lg:max-w-[330px] xl:h-24 lg:h-32 md:h-40 h-32 
             md:max-w-[400px]
             sm:max-w-[350px]
@@ -40,7 +40,7 @@ const Card = ({ description, hr = true }: AboutUsProps) => (
             </div>
         </div>
         {hr && (
-            <div className='hidden 2xl:block absolute -right-24 mt-10 z-[-10]'>
+            <div className='hidden 2xl:block absolute -right-28 mt-10 z-[-10]'>
                 <img src={RoadMapDotsPNG} className='' alt="" />
             </div>
         )}
@@ -122,8 +122,8 @@ const RoadmapSection = () => {
     }
 
     return (
-        <div className='w-full mt-20 mb-28'>
-            <p className='text-white text-[42px] mb-12 font-normal uppercase text-center'>ROAD MAP</p>
+        <div className='w-full mt-20 mb-40'>
+            <p className='text-white text-[42px] mb-16 font-normal uppercase text-center'>ROAD MAP</p>
             <div className='w-full text-white flex justify-center items-center'>
                 <div className='hidden w-full max-w-[1920px] px-10 xl:px-32 mx-auto md:flex items-end gap-2 lg:gap-16' >
                     <div className='mb-12 '><img src={BackIcon} alt="" /></div>

@@ -16,8 +16,8 @@ const TokenDistribution = () => {
     const SingleCard = ({ icon, title, subtitle }: TokenDistributionProps): JSX.Element => {
         return (
             <div className='relative  flex flex-col text-white bg-[#0F0F0F] w-[320px] justify-center items-center   h-[320px] rounded-[50px] gap-8'>
-                <div className='absolute  bg-[#5318D1] w-full  max-w-[200px]  h-[40px] -top-3 rounded-[50px] z-[-10]' />
-                <div className=" inset-0 rounded-[100px] p-1 md:p-6 w-24 h-24 top-10 flex justify-center items-center"
+                <div className='absolute  bg-[#5318D1] w-full  max-w-[200px]  h-[40px] -top-4 rounded-[50px] z-[-10]' />
+                <div className=" inset-0  md:p-4 rounded-[100px] w-[69px] h-[69px] top-10 flex justify-center items-center"
                     style={{
                         backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
                         mixBlendMode: 'screen',
@@ -25,9 +25,9 @@ const TokenDistribution = () => {
                     }}>
                     <img src={icon} className='w-[100%] h-[100%]' alt="" />
                 </div>
-                <div className='flex justify-center items-center flex-col gap-3'>
-                    <p className={`texttualgradient text-[${title.includes('MillionaireNights') ? '28px' : '42px'}] font-semibold antialiased`}>{title}</p>
-                    <p className='text-lg md:text-2xl font-light text-[#fff]'>{subtitle}</p>
+                <div className='flex justify-center  items-center flex-col gap-3'>
+                    <p className={`texttualgradient leading-[150%] text-[${title.includes('MillionaireNights') ? '28px' : '42px'}] font-semibold antialiased`}>{title}</p>
+                    <p className='-mt-4 text-lg md:text-2xl font-light text-[#fff]'>{subtitle}</p>
                 </div>
             </div>
         )
@@ -83,10 +83,10 @@ const TokenDistribution = () => {
     )
 
     return (
-        <div className='my-16 '>
+        <div className='mt-16 mb-24'>
             <div className='text-white flex flex-col justify-center items-center'>
                 <div>
-                    <p className='text-center text-[24px] md:text-[42px]  font-normal uppercase'>TOKEN DISTRIBUTION</p>
+                    <p className='text-center text-[24px] md:text-[42px]  font-normal uppercase md:mb-10'>TOKEN DISTRIBUTION</p>
                     <div className=' flex flex-col items-center justify-center gap-1 lg:gap-5'>
                         <img src={HorizontalLinesPNG} className='mt-[1px] mx-auto w-[90%] ' alt="" />
                         <div className='flex items-center justify-center flex-col gap-1 lg:flex-row lg:gap-5'>
@@ -115,6 +115,7 @@ const TokenDistribution = () => {
                 w-[300px]
                 sm:w-[520px]
                 md:w-[627px] 
+                xl:w-[750px] 
                 ' alt="" />
             </div>
         </div>

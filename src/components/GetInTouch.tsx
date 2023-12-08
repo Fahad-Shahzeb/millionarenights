@@ -4,15 +4,15 @@ import { DotsShades } from '../assets/svgs/DotsShades';
 function GetInTouch() {
   return (
     <div className=' my-36 mx-5 relative flex items-center justify-center'>
-      <div className='absolute -mt-6  top-0  bg-[#5318D1] w-full max-w-[300px] sm:max-w-[340px] md:max-w-[570px] h-full md:h-[20px] rounded-t-[30px] z-[-10]' />
-      <div className='absolute -bottom-[10px]  bg-[#5318D1] w-full  max-w-[300px] sm:max-w-[400px] md:max-w-[570px] h-full md:h-[20px] rounded-b-[30px] z-[-10]' />
+      <div className='absolute -mt-4  top-0  bg-[#5318D1] w-full max-w-[300px] sm:max-w-[340px] md:max-w-[570px] h-full md:h-[20px] rounded-t-[50px] z-[-10]' />
+      <div className='absolute -mb-4  bottom-0   bg-[#5318D1] w-full  max-w-[300px] sm:max-w-[400px] md:max-w-[570px] h-full md:h-[20px] rounded-b-[50px] z-[-10]' />
       <div className='px-[10px] py-[30px] sm:p-[30px] lg:px-[50px] lg:py-[100px] bg-[#0F0F0F] w-full grid grid-cols-1 lg:grid-cols-2 rounded-[50px] lg:max-w-[1100px] xl:max-w-[1200px] 2xl:max-w-[1440px]'>
-        <div className='w-full lg:w-[60%] flex  flex-col ' >
-          <p className='texttualgradient leading-[40px] sm:leading-[80px] xl:leading-[70px]  text-[40px] text-center  lg:text-left lg:text-[50px] xl:text-[60px]'>
-            GET IN <br className='sm:hidden' /> TOUCH <span className='font-sans'>!</span>
+        <div className='w-full  lg:w-[60%] flex  flex-col md:ml-20' >
+          <p className='texttualgradient leading-[120%]  font-normal text-[40px] text-center  lg:text-left lg:text-[50px] xl:text-[72px]'>
+            GET IN <br className='sm:hidden' /> TOUCH<span className='font-serif'>!</span>
           </p>
-          <p className=' font-[300] text-white text-[20px] w-[100%] self-center mb-3 text-center  lg:text-left'>
-            If you<span className='font-sans'>'</span>re stuck or have a
+          <p className=' font-light text-white text-lg lg:text-[24px] w-[85%] mt-3 lg:mt-0 lg:w-[75%] self-center lg:self-start mb-3 text-center  lg:text-left'>
+            If you<span className='font-serif'>'</span>re stuck or have a
             question, feel free to contact us using one of the contact details
             below.
           </p>
@@ -22,7 +22,7 @@ function GetInTouch() {
           </div>
         </div>
 
-        <div className='w-full'>
+        <div className='w-full 2xl:-ml-20'>
           <div className='flex items-center mb-4 w-[100%]'>
             <div className='hidden sm:block w-[200px] '>
               <p className='text-lg text-white mr-5 font-normal text-right uppercase'>NAME:</p>

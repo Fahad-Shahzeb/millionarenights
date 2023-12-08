@@ -27,6 +27,7 @@ import AffliateProgramEllipsePNG from "./AffliateProgramEllipsePNG.png";
 import FlagPNG from "./FlagPNG.png";
 import RoadMapDotsPNG from "./RoadMapDotsPNG.png";
 import BackIcon from "./BackIcon.png";
+import Ellipse from "./Ecllipse.png";
 
 //Gradients
 import Gradient_1 from "./Gradient_1.png";
@@ -79,4 +80,5 @@ export {
   RoadMapDotsPNG,
   BackIcon,
   CircleGradient,
+  Ellipse,
 };

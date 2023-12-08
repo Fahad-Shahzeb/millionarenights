@@ -95,6 +95,9 @@ function App() {
             <AdvantagesSection />
             <Seperator version='partial' />
             <AffliateProgramSection />
+            <div className="block md:hidden">
+              <Seperator version='basic' />
+            </div>
 
             <div id="howtobuy">
               <OfferSection />

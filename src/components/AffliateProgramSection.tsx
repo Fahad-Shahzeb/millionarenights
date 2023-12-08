@@ -8,14 +8,15 @@ const AffliateProgramSection = () => {
     const AdvantageBubble = (): JSX.Element => {
         return (<div className='flex gap-10 z-40'>
             <div className=" inset-0 rounded-full
-                w-[200px] h-[200px]  
+                w-[157px] h-[157px] 
+                md:w-[200px] md:h-[200px]  
                 lg2:w-[260px] lg2:h-[260px]
                 2xl:w-[311px] 2xl:h-[311px] 
                 flex justify-center items-center"
                 style={{
                     backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 75.35%, #5318D1 100%)',
                 }}>
-                <p className='text-center font-semibold px-[15%] text-xs md:text-sm  lg2:text-lg  2xl:text-2xl '>Get a 20<span className='font-sans'>%</span> bonus and an additional 10<span className='font-sans'>%</span> ongoing passive income after every referred investor<span className='font-sans'>!</span> </p>
+                <p className='text-center !leading-[120%] font-semibold px-[15%] text-xs md:text-sm  lg2:text-lg  2xl:text-2xl '>Get a 20<span className='font-serif'>%</span> bonus and an additional 10<span className='font-serif'>%</span> ongoing passive income after every referred investor<span className='font-serif'>!</span> </p>
             </div>
         </div>
         )
@@ -33,21 +34,21 @@ const AffliateProgramSection = () => {
                 </div>
                 <div className='w-full max-w-[40%]'>
                     <div className='flex flex-col items-end '>
-                        <p className='font-bold text-2xl  lg:text-4xl xl:text-6xl 2xl:text-7xl text-center md:text-right  uppercase'>Millionaire
+                        <p className='font-bold text-2xl  lg:text-4xl xl:text-6xl 2xl:text-7xl text-center md:text-right  uppercase !leading-[120%]'>Millionaire
                             <span className='texttualgradient'>Nights</span> <br />
                             <span className='font-normal uppercase'> affiliate <br />
                                 program</span>
                         </p>
-                        <p className='text:xl hidden md:block lg:text-2xl font-light leading-7 text-right w-[80%]'>Share your personalised link with your friends, family and network to be rewarded.</p>
+                        <p className='text:xl hidden md:block lg:text-2xl font-light  text-right leading-[120%] w-[70%]'>Share your personalised link with your friends, family and network to be rewarded.</p>
                         <div className='w-full hidden md:block'>
                             <div className='mt-4 flex justify-end items-center flex-1  w-full gap-3'>
                                 <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
-                                    <p className=' text-base justify-center text-center font-normal  antialiased'>Buy  <span className='font-sans'> $</span>MillionAire</p>
+                                    <p className=' text-lg justify-center text-center font-semibold  antialiased'>Buy  <span className='font-serif'> $</span>MillionAire</p>
                                 </button>
                                 <button
                                     style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                                    className='gradient-hover-effect cursor-pointer py-3 flex items-center justify-center px-4   rounded-[30px]'>
-                                    <p className=' text-base text-center font-normal antialiased'>Read more</p>
+                                    className='gradient-hover-effect cursor-pointer py-3 flex items-center justify-center px-4  rounded-[30px]'>
+                                    <p className=' text-lg text-center font-semibold antialiased'>Read more</p>
                                 </button>
                             </div>
                         </div>
@@ -57,7 +58,7 @@ const AffliateProgramSection = () => {
             <div className='text-white  mb-[-8px] flex md:hidden  justify-start items-center mx-auto'>
                 <div className='w-full '>
                     <div className='relative overflow-hidden flex flex-col items-center justify-center '>
-                        <p className='font-bold text-2xl  text-center   uppercase'>Millionaire
+                        <p className='font-bold text-2xl  text-center  leading-[120%] uppercase'>Millionaire
                             <span className='texttualgradient'>Nights</span> <br />
                             <span className='font-normal uppercase'> affiliate <br />
                                 program</span>
@@ -67,20 +68,20 @@ const AffliateProgramSection = () => {
                                 <img src={CircleGradient} className='w-full' alt='' />
                             </div>
                         </div>
-                        <div className='my-10'>
+                        <div className='my-6'>
                             <AdvantageBubble />
                         </div>
                         <div className='flex flex-col items-center justify-center '>
                             <p className='text-sm md:text-xl  font-light leading-5 text-center w-[80%]'>Share your personalised link with your friends, family and network to be rewarded.</p>
-                            <div className=' w-[80%] flex items-center justify-center'>
+                            <div className=' w-[80%] flex items-center justify-center '>
                                 <div className='mt-4 flex justify-center items-center flex-1  w-full gap-3'>
-                                    <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
-                                        <p className=' text-sm  text-center font-normal  antialiased'>Buy  <span className='font-sans'> $</span>MillionAire</p>
+                                    <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-2 md:py-3 text-black '>
+                                        <p className=' text-sm  text-center font-semibold  antialiased'>Buy  <span className='font-serif'> $</span>MillionAire</p>
                                     </button>
                                     <button
                                         style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
-                                        className='gradient-hover-effect cursor-pointer py-3 flex items-center justify-center px-4 rounded-[30px]'>
-                                        <p className=' text-sm text-center font-normal antialiased'>Read more</p>
+                                        className='gradient-hover-effect cursor-pointer py-2 md:py-3 flex items-center justify-center px-4 rounded-[30px]'>
+                                        <p className=' text-sm text-center font-semibold antialiased'>Read more</p>
                                     </button>
                                 </div>
                             </div>
@@ -89,7 +90,7 @@ const AffliateProgramSection = () => {
                 </div>
 
             </div>
-            <div className='text-white w-[70%] m-auto hidden md:block'>
+            <div className='text-white w-[70%] m-auto hidden md:block '>
                 <hr className="line above bg-[#373639]" />
             </div>
         </div>

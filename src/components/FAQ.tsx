@@ -32,13 +32,13 @@ const AddIcon = () => {
 const FAQ = () => {
   const faqData = [
     {
-      question: <p >HOW DO I BUY A ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> TOKEN?</p>,
+      question: <p >HOW DO I BUY A <span className='font-bold'>ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> </span> TOKEN?</p>,
       // 'HOW DO I BUY A ŠMILLIONAIRE NIGHTSTOKEN?',
       answer:
         'SMillion Aire can only be purchased on our official website [Image of ŠMILLIONAIRENIGHTS website] with BNR ETH USDT KERC-20) USDC (ERC-20) BUSD (BEP-20)L USDI (BEP-20).or.credit card at our partner through Transak',
     },
     {
-      question: <p>WHAT IS THE DIFFERENCE BETWEEN ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> AND OTHER DATING PLATFORMS?</p>,
+      question: <p>WHAT IS THE DIFFERENCE BETWEEN <span className='font-bold'>ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> </span> AND OTHER DATING PLATFORMS?</p>,
       answer:
         'SMillion Aire is a new dating platform that focuses on connecting people with similar financial goals. It is different from other dating platforms in that it offers a variety of features that are specifically designed for millionaires and billionaires, such as a luxury marketplace and a private jet service.',
     },
@@ -48,7 +48,7 @@ const FAQ = () => {
         'You will be paid out on the first of each month, directly to your bank account.',
     },
     {
-      question: <p>WHAT MAKES ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> SUSTAINABLE IN THE LONG-TERM?</p>,
+      question: <p>WHAT MAKES <span className='font-bold'>ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span> </span> SUSTAINABLE IN THE LONG-TERM?</p>,
       answer:
         "SMillion Aire is sustainable in the long-term because it is based on a subscription model. This means that users pay a monthly fee to access the platform's features. This revenue stream will allow SMillion Aire to continue to invest in its platform and grow its user base.",
     },
@@ -64,9 +64,9 @@ const FAQ = () => {
   ];
 
   return (
-    <div className='mt-20 mb-28'>
+    <div className='mt-20 mb-28 '>
       <p className='text-white text-[42px] mb-12 font-normal uppercase text-center'>FAQ</p>
-      <div className='w-[80%] mx-auto  flex flex-col gap-5'>
+      <div className='w-[90%] md:w-[75%]  mx-auto  flex flex-col gap-5'>
         {faqData.map((item, index) => (
           <FAQItem key={index} question={item.question} answer={item.answer} />
         ))}
@@ -81,15 +81,15 @@ const FAQItem = ({ question, answer }: any) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className='relative'>
+    <div className='relative '>
       <div className='flex w-full gap-3 flex-col text-white'>
-        <p className='w-[80%] md:w-full' onClick={() => setOpen(!open)}>
+        <p className='w-[90%] md:w-full text-base md:text-lg font-normal' onClick={() => setOpen(!open)}>
           {question}
         </p>
         {!open && <div className='w-full h-[1px] bg-[#5318D1]' />}
         {open && (
           <div>
-            <p className='text-xs text-[#989898]'>{answer}</p>
+            <p className='text-sm  md:text-base font-light text-[#989898]'>{answer}</p>
           </div>
         )}
       </div>
