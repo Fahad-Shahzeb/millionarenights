@@ -31,11 +31,21 @@ import Ellipse from "./Ecllipse.png";
 
 //Gradients
 import Gradient_1 from "./Gradient_1.png";
+import Mobile_Gradient_1 from "./Mobile_Gradient_1.png";
 import Gradient_2 from "./Gradient_2.png";
+import Gradient_2_1 from "./Gradient_2_1.png";
+import Gradient_2__1 from "./Gradient_2__1.png";
+import Mobile_Gradient_2 from "./Mobile_Gradient_2.png";
 import Gradient_3 from "./Gradient_3.png";
+import Gradient_3_1 from "./Gradient_3_1.png";
+import Mobile_Gradient_3 from "./Mobile_Gradient_3.png";
 import Gradient_4 from "./Gradient_4.png";
+import Gradient_4_1 from "./Gradient_4_1.png";
+import Mobile_Gradient_4 from "./Mobile_Gradient_4.png";
 import Gradient_5 from "./Gradient_5.png";
+import Mobile_Gradient_5 from "./Mobile_Gradient_5.png";
 import Gradient_6 from "./Gradient_6.png";
+import Mobile_Gradient_6 from "./Mobile_Gradient_6.png";
 import RoadMapLeftPNG from "./RoadMapLeftPNG.png";
 import RoadMapRightPNG from "./RoadMapRightPNG.png";
 import CircleGradient from "./CircleGradient.png";
@@ -44,11 +54,21 @@ import CircleGradient from "./CircleGradient.png";
 export {
   AppLogo_PNG,
   Gradient_1,
+  Mobile_Gradient_1,
   Gradient_2,
+  Gradient_2_1,
+  Gradient_2__1,
+  Mobile_Gradient_2,
   Gradient_3,
+  Gradient_3_1,
+  Mobile_Gradient_3,
   Gradient_4,
+  Gradient_4_1,
+  Mobile_Gradient_4,
   Gradient_5,
+  Mobile_Gradient_5,
   Gradient_6,
+  Mobile_Gradient_6,
   RoadMapLeftPNG,
   RoadMapRightPNG,
   DollarCoin_PNG,
