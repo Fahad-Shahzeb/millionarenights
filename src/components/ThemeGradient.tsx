@@ -20,6 +20,7 @@ import {
 const ThemeGradient = () => {
   return (
     <div>
+      {/* DESKTOP GRADIENTS */}
       <div className='hidden md:block'>
         {/* Right Side  */}
         <div className={`absolute -left-20 -top-32 z-[-1]`}>
@@ -73,6 +74,7 @@ const ThemeGradient = () => {
           />
         </div>
       </div>
+      {/* MOBILE GRADIENTS */}
       <div className='block md:hidden'>
         {/* Right Side  */}
         <div className={`absolute sm:-right-96 sm:top-0 z-[-1]`}>
@@ -82,28 +84,35 @@ const ThemeGradient = () => {
             className={`w-[120%] block sm:hidden`}
           />
         </div>
-        <div className={`absolute top-[109rem] z-[-1] `}>
+        <div className={`absolute top-[107rem] z-[-1] `}>
           <img
             alt=''
             src={Mobile_Gradient_2}
             className={`w-[100%]`}
           />
         </div>
-        <div className={`absolute top-[130rem] -left-[35rem]  z-[-1] `}>
+        <div className={`absolute top-[122rem] -left-[15rem]  z-[-1] `}>
           <img
             alt=''
             src={Gradient_5}
             className={`w-[100%]`}
           />
         </div>
-        <div className={`absolute top-[150rem] -left-[25rem]  z-[-1] `}>
+        <div className={`absolute top-[125rem] -left-[25rem]  z-[-1] `}>
           <img
             alt=''
             src={Gradient_5}
             className={`w-[100%]`}
           />
         </div>
-        <div className={`absolute top-[160rem] -left-[35rem]  z-[-1] `}>
+        <div className={`absolute top-[145rem] -left-[20rem]  z-[-1] `}>
+          <img
+            alt=''
+            src={Gradient_5}
+            className={`w-[100%]`}
+          />
+        </div>
+        <div className={`absolute top-[155rem] -left-[35rem]  z-[-1] `}>
           <img
             alt=''
             src={Gradient_5}
