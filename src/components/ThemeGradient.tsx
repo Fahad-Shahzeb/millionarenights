@@ -75,20 +75,20 @@ const ThemeGradient = () => {
         </div>
       </div>
       {/* MOBILE GRADIENTS */}
-      <div className='block md:hidden'>
+      <div className='block sm:hidden'>
         {/* Right Side  */}
         <div className={`absolute sm:-right-96 sm:top-0 z-[-1]`}>
           <img
             alt=''
             src={Mobile_Gradient_1}
-            className={`w-[120%] block sm:hidden`}
+            className={`w-[100%] xs1:w-[200%] xs1:h-[680px] imgGrads block sm:hidden`}
           />
         </div>
         <div className={`absolute top-[107rem] z-[-1] `}>
           <img
             alt=''
             src={Mobile_Gradient_2}
-            className={`w-[100%]`}
+            className={`w-[100%] xs:w-[200%] imgGrads`}
           />
         </div>
         <div className={`absolute top-[122rem] -left-[15rem]  z-[-1] `}>
@@ -146,11 +146,11 @@ const ThemeGradient = () => {
             className={`w-[100%] `}
           />
         </div>
-        <div className={`absolute top-[518rem]  z-[-1] `}>
+        <div className={`absolute top-[518rem] xs1:top-[480rem]  z-[-1] `}>
           <img
             alt=''
             src={Mobile_Gradient_5}
-            className={`w-[100%] `}
+            className={`w-[100%] xs1:w-[200%] imgGrads`}
           />
         </div>
         <div className={`absolute top-[630rem] z-[-1] `}>

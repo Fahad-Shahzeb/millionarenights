@@ -287,7 +287,7 @@ body {
   overflow-x: hidden;
 }
 
-.plain_input > input:focus,
+.plain_input>input:focus,
 textarea:focus {
   outline: none;
 }
@@ -302,12 +302,14 @@ textarea:focus {
 
 .above {
   margin-bottom: 5px;
-  background-color: #373639; /* Set line color */
+  background-color: #373639;
+  /* Set line color */
 }
 
 .below {
   margin-top: 5px;
-  background-color: #373639; /* Set line color */
+  background-color: #373639;
+  /* Set line color */
 }
 
 .texttualgradient {
@@ -317,6 +319,10 @@ textarea:focus {
   background: linear-gradient(to top, #775cf4, #c85ef7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.imgGrads {
+  max-width: 1000%;
 }
 
 progress::-webkit-progress-bar {
@@ -373,6 +379,7 @@ progress {
   transition: background-color 0.6s;
   place-content: center;
 }
+
 .gradient-hover-effect:hover {
   background-color: #775cf4;
   color: #fff;
