@@ -88,7 +88,7 @@ const ThemeGradient = () => {
           <img
             alt=''
             src={Mobile_Gradient_2}
-            className={`w-[100%] xs:w-[200%] imgGrads`}
+            className={`w-[100%] xs1:w-[200%] imgGrads`}
           />
         </div>
         <div className={`absolute top-[122rem] -left-[15rem]  z-[-1] `}>
@@ -136,6 +136,7 @@ const ThemeGradient = () => {
         <div className={`absolute top-[352rem]  z-[-1] `}>
           <img
             alt=''
+            className={`w-[100%] xs1:w-[200%] imgGrads`}
             src={Mobile_Gradient_3}
           />
         </div>
