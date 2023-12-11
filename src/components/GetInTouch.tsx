@@ -10,10 +10,10 @@ function GetInTouch() {
         <div className='w-full  lg:w-[60%] flex  flex-col md:ml-20'>
           <p className='texttualgradient leading-[120%]  font-normal text-[40px] text-center  lg:text-left lg:text-[50px] xl:text-[72px]'>
             GET IN <br className='sm:hidden' /> TOUCH
-            <span className='font-serif'>!</span>
+            <span className=' '>!</span>
           </p>
           <p className=' font-light text-white text-lg lg:text-[24px] w-[85%] mt-3 lg:mt-0 lg:w-[75%] self-center lg:self-start mb-3 text-center  lg:text-left'>
-            If you<span className='font-serif'>'</span>re stuck or have a
+            If you<span className=' '>'</span>re stuck or have a
             question, feel free to contact us using one of the contact details
             below.
           </p>

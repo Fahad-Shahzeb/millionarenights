@@ -22,13 +22,13 @@ const OfferSection = () => {
           <p className=' text-center md:text-right text-white font-light leading-[120%] text-sm md:text-xl lg:text-2xl sm:ml-2 px-3 md:px-0'>
             The first 1000 token buyers will also benefit from the profits of
             our LUXXDATING project
-            <span className='font-serif'>!</span>
+            <span className=' '>!</span>
           </p>
           <div className='w-full block mt-3 md:mt-0'>
             <div className='mt-4 flex justify-center md:justify-end items-center flex-1  w-full gap-3'>
               <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-2 md:py-3 text-black '>
                 <p className='text-sm lg:text-lg justify-center text-center font-semibold  antialiased'>
-                  Buy <span className='font-serif'> $</span>MillionAire
+                  Buy <span className=' '> $</span>MillionAire
                 </p>
               </button>
               <button

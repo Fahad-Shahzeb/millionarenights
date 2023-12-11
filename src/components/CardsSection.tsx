@@ -35,16 +35,16 @@ const CardsSection = () => {
                 </span>
               </p>
               <p className='w-[90%] md:w-[75%] px-0 text-center text-[#989898] text-base font-light leading-[150%]'>
-                MillionaireNights isn<span className='font-serif'>'</span>t just
-                a dating platform <span className='font-serif'>-</span> it
-                <span className='font-serif'>'</span>s a revolutionary network
+                MillionaireNights isn<span className=' '>'</span>t just
+                a dating platform <span className=' '>-</span> it
+                <span className=' '>'</span>s a revolutionary network
                 for networking. With only verified, trusted members and a host
                 of features to help you find your ideal partner.
               </p>
             </div>
             <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black md:-mt-0 -mt-4 mb-8'>
               <p className='text-base md:text-lg font-normal antialiased'>
-                Buy <span className='font-serif'>$</span>Millionaire
+                Buy <span className=' '>$</span>Millionaire
               </p>
             </button>
           </div>
@@ -85,7 +85,7 @@ const CardsSection = () => {
             </div>
             <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black md:-mt-0 -mt-4 mb-8'>
               <p className='text-base md:text-lg font-normal antialiased'>
-                Buy <span className='font-serif'>$</span>Millionaire
+                Buy <span className=' '>$</span>Millionaire
               </p>
             </button>
           </div>

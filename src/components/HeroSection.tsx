@@ -17,9 +17,9 @@ const HeroSection = () => {
                             <span className='texttualgradient'>Nights</span>
                         </p>
                         <p className='text-[86px] sm:text-[110px] text-center xl:text-[150px] 2xl:text-[180px] w-[full] uppercase leading-[120%] font-bold'>token</p>
-                        <p className='text-[14px] xl:text-lg text-center lg2:text-left 2xl:text-2xl break-words font-semibold uppercase w-[280px] leading-[150%] sm:w-[400px] lg2:w-[626px]'>BENEFIT FROM THE EXPANSION OF OUR  LUXURY MARKETPLACE AND DATING NETWORK<span className='font-serif'>!</span></p>
+                        <p className='text-[14px] xl:text-lg text-center lg2:text-left 2xl:text-2xl break-words font-semibold uppercase w-[280px] leading-[150%] sm:w-[400px] lg2:w-[626px]'>BENEFIT FROM THE EXPANSION OF OUR  LUXURY MARKETPLACE AND DATING NETWORK<span className=' '>!</span></p>
 
-                        <p className='text-xs sm:text-lg font-light text-center w-[230px] lg2:text-left break-words sm:w-[400px] lg2:w-[626px] leading-[170%]'>Conquer the world with us and benefit from the profits<span className='font-serif'>!</span></p>
+                        <p className='text-xs sm:text-lg font-light text-center w-[230px] lg2:text-left break-words sm:w-[400px] lg2:w-[626px] leading-[170%]'>Conquer the world with us and benefit from the profits<span className=' '>!</span></p>
 
                         <div className='flex justify-center flex-col sm:flex-row lg2:justify-start items-center lg2:text-left w-full gap-5 lg:gap-7 mt-5 lg:mt-[32px]'>
                             <div
@@ -52,22 +52,22 @@ const HeroSection = () => {
                             to switch network
                         </p>
                         <div className='w-full px-6 2xl:px-8 flex pb-16 pt-2 items-center flex-col gap-3'>
-                            <p className='text-sm md:text-base 2xl:text-lg font-normal text-center leading-[120%]'>BUY IN BEFORE PRICE INCREASES<span className='font-serif'>!</span> <br />Stage 2</p>
+                            <p className='text-sm md:text-base 2xl:text-lg font-normal text-center leading-[120%]'>BUY IN BEFORE PRICE INCREASES<span className=' '>!</span> <br />Stage 2</p>
                             <div className='flex w-full sm:w-full justify-center items-center '>
                                 <div className='bg-[#141414] w-full h-10 flex justify-start items-center rounded-3xl '>
                                     <div className='bg-gradient-to-t from-[#CDB8FB] to-[#FFF] w-[85%] h-10 flex justify-center items-center rounded-3xl '>
-                                        <p className='text-black text-sm font-semibold w-[full] text-center leading-[150%]'>UNTIL NEXT PRICE <span className='font-serif'>$</span>0.07</p>
+                                        <p className='text-black text-sm font-semibold w-[full] text-center leading-[150%]'>UNTIL NEXT PRICE <span className=' '>$</span>0.07</p>
                                     </div>
                                 </div>
                             </div>
                             <div className='opacity-60 leading-[120%]'>
-                                <p className='text-xs font-normal antialiased'>931 123 VLT <span className='font-serif'>/</span> 1 000 000 VLT</p>
-                                <p className='text-xs font-normal antialiased'>CEX LISTING PRICE: <span className='font-serif'>$</span>0.16</p>
+                                <p className='text-xs font-normal antialiased'>931 123 VLT <span className=' '>/</span> 1 000 000 VLT</p>
+                                <p className='text-xs font-normal antialiased'>CEX LISTING PRICE: <span className=' '>$</span>0.16</p>
                                 <p className='text-xs font-normal antialiased'>Any unsold tokens will be burnt</p>
                             </div>
                             <div className='bg-[#fff]/[0.07] plain_input w-full sm:w-full py-2 md:py-3 rounded-[30px]'>
                                 {/* <input className=' bg-transparent px-4 text-white   ' placeholder='' /> */}
-                                <p className='text-[20px] md:text-[30px] text-center font-semibold text-white leading-[120%]'>1 VLT <span className='font-serif'>= $</span>0.06</p>
+                                <p className='text-[20px] md:text-[30px] text-center font-semibold text-white leading-[120%]'>1 VLT <span className=' '>= $</span>0.06</p>
                             </div>
                             <div className='flex justify-between flex-1  w-full sm:w-full gap-3 '>
                                 <div className='flex gap-3 items-center leading-[150%] justify-center bg-[#fff]/[0.07] plain_input w-full py-2 md:py-3 rounded-[30px]'>

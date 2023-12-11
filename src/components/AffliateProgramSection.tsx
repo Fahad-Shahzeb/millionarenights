@@ -16,7 +16,7 @@ const AffliateProgramSection = () => {
                 style={{
                     backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 75.35%, #5318D1 100%)',
                 }}>
-                <p className='text-center !leading-[120%] font-semibold px-[15%] text-xs md:text-sm  lg2:text-lg  2xl:text-2xl '>Get a 20<span className='font-serif'>%</span> bonus and an additional 10<span className='font-serif'>%</span> ongoing passive income after every referred investor<span className='font-serif'>!</span> </p>
+                <p className='text-center !leading-[120%] font-semibold px-[15%] text-xs md:text-sm  lg2:text-lg  2xl:text-2xl '>Get a 20<span className=' '>%</span> bonus and an additional 10<span className=' '>%</span> ongoing passive income after every referred investor<span className=' '>!</span> </p>
             </div>
         </div>
         )
@@ -43,7 +43,7 @@ const AffliateProgramSection = () => {
                         <div className='w-full hidden md:block'>
                             <div className='mt-4 flex justify-end items-center flex-1  w-full gap-3'>
                                 <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
-                                    <p className=' text-lg justify-center text-center font-semibold  antialiased'>Buy  <span className='font-serif'> $</span>MillionAire</p>
+                                    <p className=' text-lg justify-center text-center font-semibold  antialiased'>Buy  <span className=' '> $</span>MillionAire</p>
                                 </button>
                                 <button
                                     style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
@@ -76,7 +76,7 @@ const AffliateProgramSection = () => {
                             <div className=' w-[80%] flex items-center justify-center '>
                                 <div className='mt-4 flex justify-center items-center flex-1  w-full gap-3'>
                                     <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-2 md:py-3 text-black '>
-                                        <p className=' text-sm  text-center font-semibold  antialiased'>Buy  <span className='font-serif'> $</span>MillionAire</p>
+                                        <p className=' text-sm  text-center font-semibold  antialiased'>Buy  <span className=' '> $</span>MillionAire</p>
                                     </button>
                                     <button
                                         style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}

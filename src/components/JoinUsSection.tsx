@@ -8,7 +8,7 @@ const JoinUsSection = ({ isInViewport1 }: { isInViewport1: boolean }) => {
     return (
         <section id="contai" className='mt-10 overflow-x-hidden'>
             <div className="text-white ">
-                <p className='text-center text-[24px] md:text-[42px] lg:text-[72px] text-white font-normal uppercase'>Join Us Now<span className='font-sans'>!</span></p>
+                <p className='text-center text-[24px] md:text-[42px] lg:text-[72px] text-white font-normal uppercase'>Join Us Now!</p>
                 <div className='mt-4 flex flex-col items-center justify-center gap-1 lg:gap-5'>
                     <img src={HorizontalLinesPNG} className='mt-[1px] mx-auto w-[40%] ' alt="" />
                     <div className='flex items-center justify-center flex-col gap-1 lg:flex-row lg:gap-5'>
@@ -25,28 +25,27 @@ const JoinUsSection = ({ isInViewport1 }: { isInViewport1: boolean }) => {
             <div className='grid grid-cols-1 md:grid-cols-4 text-center px-16 sm:px-60  xl:px-60 my-16'>
                 <div className='flex items-center flex-col py-6'>
                     <p className='texttualgradient font-semibold text-[42px] md:text-3xl lg:text-4xl 2xl:text-6xl '>
-                        <span className='font-sans'>$</span>{isInViewport1 && <CountUp end={6} />}B
+                        ${isInViewport1 && <CountUp end={6} />}B
                     </p>
                     <p className='text-white font-light text-lg lg:text-xl xl:text-2xl'>Online dating market</p>
                 </div>
                 <div className='flex items-center px-1 flex-col py-6 border-t-[1px] md:border-l-[1px] md:border-t-0 border-neutral-500 '>
                     <p className='texttualgradient font-semibold text-[42px] md:text-3xl lg:text-4xl 2xl:text-6xl '>
-                        <span className='font-sans'>4</span>{isInViewport1 && <CountUp end={30} />}M
-                        <span className='font-sans'>+</span>
+                        {isInViewport1 && <CountUp end={430} />}M +
                     </p>
                     <p className='text-white font-light text-lg lg:text-xl xl:text-2xl'>
-                        Dating users in the world
+                        dating users in the world
                     </p>
                 </div>
                 <div className='flex items-center px-1 flex-col py-6 border-t-[1px] md:border-l-[1px] md:border-t-0 border-neutral-500 '>
                     <p className='texttualgradient font-semibold text-[42px] md:text-3xl lg:text-4xl 2xl:text-6xl '>
-                        {isInViewport1 && <CountUp end={50} />}<span className='font-sans'>%</span>
+                        {isInViewport1 && <CountUp end={50} />}%
                     </p>
                     <p className='text-white font-light text-lg lg:text-xl xl:text-2xl'>Growth by 2025</p>
                 </div>
                 <div className='flex items-center px-1 flex-col py-6 border-t-[1px] md:border-l-[1px] md:border-t-0 border-neutral-500 '>
                     <p className='texttualgradient font-semibold text-[42px] md:text-3xl lg:text-4xl 2xl:text-6xl '>
-                        <span className='font-sans'>$</span>{isInViewport1 && <CountUp end={23} />}B
+                        ${isInViewport1 && <CountUp end={23} />}B
                     </p>
                     <p className='text-white font-light text-lg lg:text-xl xl:text-2xl'>NFT Market</p>
                 </div>

@@ -70,7 +70,7 @@ const AdvantagesSection = () => {
                                         <span className='texttualgradient'>Nights</span>
                                     </span>
                                     <br />
-                                    Token<span className='font-serif'>!</span>
+                                    Token<span className=' '>!</span>
                                 </p>
                                 <p className='w-[90%] md:w-[70%] text-base sm:text-2xl font-light  m-0 text-center'>
                                     Token holders get their share from the profits of the company.
