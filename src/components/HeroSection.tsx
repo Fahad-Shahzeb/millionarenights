@@ -1,5 +1,6 @@
 import React from "react";
 import { ETHIcon, SocialIcons, USDTIcon } from "../assets";
+import { GradientButton } from "./GradientButton";
 type mode = "facebook" | "instagram" | "twitter" | "vimeo";
 
 const HeroSection = () => {
@@ -112,8 +113,8 @@ const HeroSection = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="flex justify-between items-center flex-1  w-full sm:w-full gap-3">
-                                <div className="w-full ">
+                            <div className="flex justify-between items-center w-full gap-3">
+                                <div className="w-1/2">
                                     <p className="mb-1 text-sm font-normal text-[#fff]/[0.6] text-center leading-[150%]">
                                         ETH you pay
                                     </p>
@@ -123,7 +124,7 @@ const HeroSection = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="w-full">
+                                <div className="w-1/2">
                                     <p className="mb-1  text-sm font-normal text-[#fff]/[0.6] text-center leading-[150%]">
                                         USDT you receive
                                     </p>
@@ -134,16 +135,9 @@ const HeroSection = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-4 flex justify-between items-center flex-1  w-full md:w-full gap-2 sm:gap-3">
-                                <button
-                                    style={{ border: "1.5px solid var(--GRAD_01, #775CF4)" }}
-                                    className=" gradient-hover-effect cursor-pointer py-3  flex items-center justify-center px-1 md:px-4   w-[133px] sm:w-full rounded-[30px]"
-                                >
-                                    <p className="text-sm 2xl:text-base text-center font-normal antialiased leading-[150%]  ">
-                                        Connect wallet
-                                    </p>
-                                </button>
-                                <button className="gradient-hover-effect cursor-pointer py-3 bg-gradient-to-t from-[#775CF4] to-[#C85EF7] flex items-center justify-center px-1  md:px-4 bg-[#fff]/[0.07]  w-[133px] sm:w-full  rounded-[30px]">
+                            <div className="mt-4 flex justify-between items-center w-full gap-3">
+                                <GradientButton text='Connect Wallet' className="w-[calc(50%-4px)]" />
+                                <button className="gradient-hover-effect cursor-pointer py-3 bg-gradient-to-t from-[#775CF4] to-[#C85EF7] flex items-center justify-center px-1  md:px-4 bg-[#fff]/[0.07] w-1/2  rounded-[30px]">
                                     <p className="text-sm 2xl:text-base text-center font-normal antialiased leading-[150%]  w-full">
                                         Buy Crypto
                                     </p>
@@ -156,5 +150,22 @@ const HeroSection = () => {
         </div>
     );
 };
+
+{/* <button
+                                    style={{ border: "1.5px solid var(--GRAD_01, #775CF4)" }}
+                                    className=" gradient-hover-effect cursor-pointer py-3  flex items-center justify-center px-1 md:px-4   w-[133px] sm:w-full rounded-[30px]"
+                                >
+                                    <p className="text-sm 2xl:text-base text-center font-normal antialiased leading-[150%]  ">
+                                        Connect wallet
+                                    </p>
+                                </button> */}
+{/* <div className='bg-colorGradiant w-1/2 flex-none
+                                 rounded-full'>
+                                    <button className='w-[calc(100%-2px)] m-[1px] bg-black text-white px-2 py-3 rounded-full gradient-hover-effect text-sm 2xl:text-base text-center font-normal antialiased leading-[150%]'>
+                                        Connect Wallet
+                                    </button>
+                                </div> */}
+
+
 
 export { HeroSection };

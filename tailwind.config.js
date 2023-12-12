@@ -16,6 +16,10 @@ module.exports = {
         SonyGothic: ["SonyGothic", ...defaultTheme.fontFamily.sans],
         sans: ["SonyGothic", ...defaultTheme.fontFamily.sans],
       },
+      colors: {},
+      backgroundImage: {
+        colorGradiant: "linear-gradient(to bottom right, #C85EF7, #775Cf4)",
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,6 @@
 import React from 'react'
 import { AffliateProgramEllipsePNG, CircleGradient, } from '../assets'
+import { GradientButton } from './GradientButton'
 
 
 
@@ -45,11 +46,12 @@ const AffliateProgramSection = () => {
                                 <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
                                     <p className=' text-lg justify-center text-center font-semibold  antialiased'>Buy  <span className=' '> $</span>MillionAire</p>
                                 </button>
-                                <button
+                                {/* <button
                                     style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
                                     className='gradient-hover-effect cursor-pointer py-3 flex items-center justify-center px-4  rounded-[30px]'>
                                     <p className=' text-lg text-center font-semibold antialiased'>Read more</p>
-                                </button>
+                                </button> */}
+                                <GradientButton text='Read more' className="" buttonClassName='!px-4 !text-lg font-semibold ' />
                             </div>
                         </div>
                     </div>
