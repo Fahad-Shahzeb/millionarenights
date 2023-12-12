@@ -19,6 +19,7 @@ module.exports = {
       colors: {},
       backgroundImage: {
         colorGradiant: "linear-gradient(to bottom right, #C85EF7, #775Cf4)",
+        colorGradiantFocused: "linear-gradient(to bottom right, #775CF4, #C85EF7,)",
       },
     },
   },
