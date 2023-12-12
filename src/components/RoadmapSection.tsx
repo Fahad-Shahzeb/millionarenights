@@ -127,15 +127,27 @@ const RoadmapSection = () => {
           </div>
         </div>
 
-        <hr
+        {/* <hr
           className="absolute top-[45%] left-[15%] h-1 w-[70%] mx-auto
                 2xl:left-[15%] 2xl:w-[70%] 2xl:top-[31%]
                 xl:left-[18%] xl:w-[64%] xl:top-[30%]
                 lg:top-[25%]
                 md:left-[19%] md:w-[62%] md:top-[24%]
                 hidden md:block
+
+                text-red-900
                 "
-        />
+        /> */}
+        <div className="absolute top-[45%] left-[15%]  w-[70%] mx-auto
+                2xl:left-[15%] 2xl:w-[70%] 2xl:top-[31%]
+                xl:left-[18%] xl:w-[64%] xl:top-[30%]
+                lg:top-[25%]
+                md:left-[19%] md:w-[62%] md:top-[24%]
+                hidden md:block
+                border 
+                border-solid
+              border-[#5318D1]
+                "/>
       </div>
     );
   };
