@@ -13,7 +13,7 @@ interface AboutUsProps {
 
 const Flag = () => (
   <div
-    className="relative inset-0 rounded-[100px] flex-none h-[80px] w-[80px] md:h-[50px] md:w-[50px] 2xl:w-[66px] 2xl:h-[66px] top-10 flex justify-center items-center bg-black z-50"
+    className="relative inset-0 rounded-[100px] flex-none h-[80px] w-[80px] md:h-[50px] md:w-[50px] 2xl:w-[66px] 2xl:h-[66px] top-5 flex justify-center items-center bg-black z-50"
     style={{
       backgroundImage:
         "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)",
@@ -26,19 +26,19 @@ const Flag = () => (
 );
 
 const Card = ({ description, hr = true }: AboutUsProps) => (
-  <div className="relative mt-8 flex justify-center items-center gap-4">
+  <div className="relative mt-16 flex justify-center items-center gap-4">
     <div className="mt-10 relative flex items-center justify-center ">
       <div className="absolute -mt-3 top-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-t-[15px] 2xl:rounded-t-[30px] z-[-10]" />
       <div className="absolute -mb-3  bottom-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-b-[15px] 2xl:rounded-b-[30px] z-[-10]" />
       <div
         className="p-4 2xl:p-[30px] flex items-center justify-center gap-4 flex-col bg-[#0F0F0F] text-center rounded-[20px] 2xl:rounded-[20px] w-full
-            lg:max-w-[334px] xl:h-24 lg:h-32 md:h-40 h-32 
+            lg:max-w-[334px] lg:h-[140px] md:h-40 h-32 
             md:max-w-[400px]
             sm:max-w-[350px]
             max-w-[300px]
             "
       >
-        <p className="text-[#989898] w-full antialiased text-sm lg:text-base font-light">
+        <p className="text-[#989898] w-full px-5  antialiased text-sm lg:text-base font-light">
           {description}
         </p>
       </div>
@@ -129,10 +129,10 @@ const RoadmapSection = () => {
 
         <hr
           className="absolute top-[45%] left-[15%] h-1 w-[70%] mx-auto
-                2xl:left-[15%] 2xl:w-[70%] 2xl:top-[44%]
-                xl:left-[18%] xl:w-[64%] xl:top-[45%]
-                 lg:top-[35%]
-                md:left-[19%] md:w-[62%] md:top-[32%]
+                2xl:left-[15%] 2xl:w-[70%] 2xl:top-[31%]
+                xl:left-[18%] xl:w-[64%] xl:top-[30%]
+                lg:top-[25%]
+                md:left-[19%] md:w-[62%] md:top-[24%]
                 hidden md:block
                 "
         />
