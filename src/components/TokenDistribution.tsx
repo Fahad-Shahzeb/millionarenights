@@ -1,6 +1,6 @@
 import React from 'react'
-import { AppLogo_PNG, FlowChartPNG, HorizontalLinesPNG } from '../assets'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { AppLogo_PNG, BackIcon, FlowChartPNG, HorizontalLinesPNG } from '../assets'
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -12,27 +12,6 @@ interface TokenDistributionProps {
     subtitle: string;
 }
 const TokenDistribution = () => {
-
-    const SingleCard = ({ icon, title, subtitle }: TokenDistributionProps): JSX.Element => {
-        return (
-            <div className='relative  flex flex-col text-white bg-[#0F0F0F] w-[320px] justify-center items-center   h-[320px] rounded-[50px] gap-8'>
-                <div className='absolute  bg-[#5318D1] w-full  max-w-[200px]  h-[40px] -top-4 rounded-[50px] z-[-10]' />
-                <div className=" inset-0  md:p-4 rounded-[100px] w-[69px] h-[69px] top-10 flex justify-center items-center"
-                    style={{
-                        backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
-                        mixBlendMode: 'screen',
-                        filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
-                    }}>
-                    <img src={icon} className='w-[100%] h-[100%]' alt="" />
-                </div>
-                <div className='flex justify-center  items-center flex-col gap-3'>
-                    <p className={`texttualgradient leading-[150%] text-[${title.includes('MillionaireNights') ? '28px' : '42px'}] font-semibold antialiased`}>{title}</p>
-                    <p className='-mt-4 text-lg md:text-2xl font-light text-[#fff]'>{subtitle}</p>
-                </div>
-            </div>
-        )
-    }
-
     const details = [
         {
             icon: AppLogo_PNG,
@@ -56,16 +35,53 @@ const TokenDistribution = () => {
         }
     ]
 
+    const SingleCard = ({ icon, title, subtitle }: TokenDistributionProps): JSX.Element => {
+        const swiper = useSwiper();
+        return (
+            <div className='relative  flex flex-col text-white bg-[#0F0F0F] w-[320px] justify-center items-center   h-[320px] rounded-[50px] gap-8'>
+                <div className='absolute  bg-[#5318D1] w-full  max-w-[200px]  h-[40px] -top-4 rounded-[50px] z-[-10]' />
+                <div className='absolute flex md:hidden  bg-[#5318D1] w-full  max-w-[200px]  h-[40px] -bottom-4 rounded-[50px] z-[-10]' />
+                <div className=" inset-0  md:p-4 rounded-[100px] w-[69px] h-[69px] top-10 flex justify-center items-center"
+                    style={{
+                        backgroundImage: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 71.35%, #5318D1 100%)',
+                        mixBlendMode: 'screen',
+                        filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
+                    }}>
+                    <img src={icon} className='w-[100%] h-[100%]' alt="" />
+                </div>
+                <div className='flex justify-center  items-center flex-col gap-3 '>
+                    <p className={`texttualgradient leading-[150%] text-[${title.includes('MillionaireNights') ? '28px' : '42px'}] font-semibold antialiased`}>{title}</p>
+                    <p className='-mt-4 text-lg md:text-2xl font-light text-[#fff]'>{subtitle}</p>
+                </div>
+                <div className='flex md:hidden  items-center justify-between '>
+                    <button className="w-24 flex" onClick={(event) => {
+                        swiper.slidePrev()
+                        event.preventDefault();
+                    }}>
+                        <img src={BackIcon} className='w-[100%]' alt="" />
+                    </button>
+                    <div className="w-full flex gap-2 justify-center">
+                        {details.map((item) => (
+                            <div className={`w-3 h-3 ${(title === item.title) ? 'bg-colorGradiant' : 'bg-[#5318D1]'} rounded-full`} />
+                        ))}
+                    </div>
+                    <button className="rotate-180 w-24 " onClick={(event) => {
+                        swiper.slideNext()
+                        event.preventDefault();
+                    }}>
+                        <img src={BackIcon} className='w-[100%]' alt="" />
+                    </button>
+                </div>
+            </div>
+        )
+    }
+
+
+
 
     const SwiperCard = () => (
         <Swiper
             cssMode={true}
-            // navigation={{
-
-            // }}
-            pagination={{
-
-            }}
             mousewheel={true}
             keyboard={true}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
@@ -109,6 +125,7 @@ const TokenDistribution = () => {
                 <div className='flex w-[330px] mx-auto md:hidden items-center justify-center h-[450px]   ' >
                     <SwiperCard />
                 </div>
+
             </div>
             <div className='text-white mt-28 mb-16 flex items-center justify-center'>
                 <img src={FlowChartPNG} className='

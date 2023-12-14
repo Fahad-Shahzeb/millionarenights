@@ -1,6 +1,6 @@
 import React from "react";
 import { BackIcon, FlagPNG, RoadMapDotsPNG } from "../assets";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -10,6 +10,9 @@ interface AboutUsProps {
   description: string;
   hr?: boolean;
 }
+
+
+const details = ["Creation of the Brand Launch of beta version 1", "New Design Creation of the social channels Developments", "New Design Release of final version Pr-marketing campaign"]
 
 const Flag = () => (
   <div
@@ -25,76 +28,109 @@ const Flag = () => (
   </div>
 );
 
-const Card = ({ description, hr = true }: AboutUsProps) => (
-  <div className="relative mt-16 flex justify-center items-center gap-4">
-    <div className="mt-10 relative flex items-center justify-center ">
-      <div className="absolute -mt-3 top-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-t-[15px] 2xl:rounded-t-[30px] z-[-10]" />
-      <div className="absolute -mb-3  bottom-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-b-[15px] 2xl:rounded-b-[30px] z-[-10]" />
-      <div
-        className="p-4 2xl:p-[30px] flex items-center justify-center gap-4 flex-col bg-[#0F0F0F] text-center rounded-[20px] 2xl:rounded-[20px] w-full
+const Card = ({ description, hr = true }: AboutUsProps) => {
+
+
+
+  const swiper = useSwiper()
+
+  return (
+
+    <div className="relative mt-16 flex justify-center items-center gap-4">
+      <div className="mt-10  relative flex items-center justify-center ">
+        <div className="absolute -mt-3 top-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-t-[15px] 2xl:rounded-t-[30px] z-[-10]" />
+        <div className="absolute -mb-3  bottom-0  bg-[#5318D1] w-[80%] mx-auto h-full md:h-[25px] rounded-b-[15px] 2xl:rounded-b-[30px] z-[-10]" />
+        <div
+          className="p-4 2xl:p-[30px] flex items-center justify-center gap-4 flex-col bg-[#0F0F0F] text-center rounded-[20px] 2xl:rounded-[20px] w-full
             lg:max-w-[334px] lg:h-[140px] md:h-40 h-32 
             md:max-w-[400px]
             sm:max-w-[350px]
             max-w-[300px]
             "
-      >
-        <p className="text-[#989898] w-full px-5  antialiased text-sm lg:text-base font-light">
-          {description}
-        </p>
+        >
+          <p className="text-[#989898] w-full px-5  antialiased text-sm lg:text-base font-light">
+            {description}
+          </p>
+
+        </div>
+
+        <div className="absolute -bottom-16">
+          <div className='flex md:hidden  items-center justify-between '>
+            <button className="w-24 flex" onClick={(event) => {
+              swiper.slidePrev()
+              event.preventDefault();
+            }}>
+              <img src={BackIcon} className='w-[100%]' alt="" />
+            </button>
+            <div className="w-full flex gap-2 justify-center">
+              {details.map((item) => (
+                <div className={`w-3 h-3 ${(description == item) ? 'bg-colorGradiant' : 'bg-[#5318D1]'} rounded-full`} />
+              ))}
+            </div>
+            <button className="rotate-180 w-24 " onClick={(event) => {
+              swiper.slideNext()
+              event.preventDefault();
+            }}>
+              <img src={BackIcon} className='w-[100%]' alt="" />
+            </button>
+          </div>        </div>
+
       </div>
+      {hr && (
+        <div className="hidden 2xl:block absolute -right-28 mt-10 z-[-10]">
+          <img src={RoadMapDotsPNG} className="" alt="" />
+        </div>
+      )}
     </div>
-    {hr && (
-      <div className="hidden 2xl:block absolute -right-28 mt-10 z-[-10]">
-        <img src={RoadMapDotsPNG} className="" alt="" />
-      </div>
-    )}
-  </div>
-);
+  )
+}
 
-const SwiperCard = () => (
-  <Swiper
-    cssMode={true}
-    // navigation={{
+const SwiperCard = () => {
+  return (
+    <Swiper
+      cssMode={true}
+      // navigation={{
 
-    // }}
-    pagination={{}}
-    mousewheel={true}
-    keyboard={true}
-    modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-    className="mySwiper text-black h-full "
-  >
-    <SwiperSlide>
-      <div className="flex flex-col items-center flex-1 h-full">
-        <p className="texttualgradient text-[28px] md:text-[42px] text-3xl xl:text-6xl font-semibold text-center">
-          2018
-        </p>
-        <Flag />
-        <Card description="Creation of the Brand Launch of beta version 1" />
-      </div>
-    </SwiperSlide>
-    <SwiperSlide>
-      <div className="flex flex-col items-center flex-1">
-        <p className="texttualgradient text-3xl xl:text-6xl font-semibold text-center">
-          2019
-        </p>
-        <Flag />
-        <Card description="New Design Creation of the social channels Developments" />
-      </div>
-    </SwiperSlide>
-    <SwiperSlide>
-      <div className="flex flex-col items-center flex-1">
-        <p className="texttualgradient text-3xl xl:text-6xl font-semibold text-center">
-          2021
-        </p>
-        <Flag />
-        <Card
-          hr={false}
-          description="New Design Release of final version Pr-marketing campaign"
-        />
-      </div>
-    </SwiperSlide>
-  </Swiper>
-);
+      // }}
+      mousewheel={true}
+      keyboard={true}
+      modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+      className="mySwiper text-black h-full "
+    >
+      <SwiperSlide>
+        <div className="flex flex-col items-center flex-1 h-full">
+          <p className="texttualgradient text-[28px] md:text-[42px] text-3xl xl:text-6xl font-semibold text-center">
+            2018
+          </p>
+          <Flag />
+          <Card description="Creation of the Brand Launch of beta version 1" />
+        </div>
+
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="flex flex-col items-center flex-1">
+          <p className="texttualgradient text-3xl xl:text-6xl font-semibold text-center">
+            2019
+          </p>
+          <Flag />
+          <Card description="New Design Creation of the social channels Developments" />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="flex flex-col items-center flex-1">
+          <p className="texttualgradient text-3xl xl:text-6xl font-semibold text-center">
+            2021
+          </p>
+          <Flag />
+          <Card
+            hr={false}
+            description="New Design Release of final version Pr-marketing campaign"
+          />
+        </div>
+      </SwiperSlide>
+    </Swiper>
+  )
+}
 
 const RoadmapSection = () => {
   const RoadmapBubble = (): JSX.Element => {
@@ -169,7 +205,7 @@ const RoadmapSection = () => {
             <img src={BackIcon} alt="" />
           </div>
         </div>
-        <div className="flex w-full max-w-[1920px] px-10 xl:px-32 mx-auto md:hidden items-end h-[400px]  ">
+        <div className="flex w-full max-w-[1920px] px-10 xl:px-32 mx-auto md:hidden items-end h-[450px]  ">
           <SwiperCard />
         </div>
       </div>
