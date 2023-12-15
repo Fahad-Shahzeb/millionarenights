@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Header,
   HeroSection,
@@ -18,13 +18,26 @@ import {
   Footer,
   RoadmapSection,
   JoinUsSection,
-  CircularAnimation,
-} from "./components";
-import { Gradient_1, RoadMapDotsPNG, ShadyDotsIcon } from "./assets";
-import { useIsInViewport } from "./utils";
+} from './components';
+import { Gradient_1, RoadMapDotsPNG } from './assets';
+import { useIsInViewport } from './utils';
 
-const navBarHeadings = ["Home", "About", "How to Buy", "Tokenomics", "Roadmap", 'Contact'];
-const indexes = ["home", "aboutus", "howtobuy", "tokenomics", "roadmap", "contact"];
+const navBarHeadings = [
+  'Home',
+  'About',
+  'How to Buy',
+  'Tokenomics',
+  'Roadmap',
+  'Contact',
+];
+const indexes = [
+  'home',
+  'aboutus',
+  'howtobuy',
+  'tokenomics',
+  'roadmap',
+  'contact',
+];
 
 function App() {
   const [showMenu, setshowMenu] = useState(false);
@@ -40,47 +53,68 @@ function App() {
   const scrollToSection = (index: number) => {
     var element = document.getElementById(indexes[index]);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+        inline: 'nearest',
+      });
     }
   };
   const ref1 = useRef(null);
   const isInViewport1 = useIsInViewport(ref1);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className='relative overflow-hidden'>
       <ThemeGradient />
       <div className='relative flex flex-1 flex-col z-50'>
-        {showMenu && <div className={`absolute w-[140%] h-[80%] left-0  z-[10]`}>
-          <img alt='' src={Gradient_1} className={`w-[100%] h-[100%]`} />
-        </div>}
+        {showMenu && (
+          <div className={`absolute w-[140%] h-[80%] left-0  z-[10]`}>
+            <img
+              alt=''
+              src={Gradient_1}
+              className={`w-[100%] h-[100%]`}
+            />
+          </div>
+        )}
         <Header
           navBarHeadings={navBarHeadings.slice(0, 5)}
           setshowMenu={() => {
-            setshowMenu(!showMenu)
+            setshowMenu(!showMenu);
           }}
           scrollToSection={scrollToSection}
         />
         {showMenu && (
           <div className='relative w-screen h-screen bg-[#000] flex flex-col justify-center items-center '>
             {navBarHeadings.map((item, index) => (
-              <div className="w-[50%] cursor-pointer flex flex-col justify-center items-center z-40">
-                <button onClick={() => { scrollToSection(index) }} className='cursor-pointer px-4 py-8 text-lg text-white text-center w-[143px]'>
-                  <p className="text-base font-normal">{item}</p>
+              <div
+                key={index}
+                className='w-[50%] cursor-pointer flex flex-col justify-center items-center z-40'
+              >
+                <button
+                  onClick={() => {
+                    scrollToSection(index);
+                  }}
+                  className='cursor-pointer px-4 py-8 text-lg text-white text-center w-[143px]'
+                >
+                  <p className='text-base font-normal'>{item}</p>
                 </button>
                 {index < 5 && <hr className='line  bg-[#fff]/[0.3]' />}
-                {index == 5 &&
-                  <div className="mt-10">
-                    <img src={RoadMapDotsPNG} className="w-32 h-32 rotate-90" alt="" />
+                {index === 5 && (
+                  <div className='mt-10'>
+                    <img
+                      src={RoadMapDotsPNG}
+                      className='w-32 h-32 rotate-90'
+                      alt=''
+                    />
                   </div>
-                }
+                )}
               </div>
             ))}
-
           </div>
         )}
         {!showMenu && (
-          <div className="relative">
-            <div id="home">
+          <div className='relative'>
+            <div id='home'>
               <HeroSection />
               <Seperator version='basic' />
             </div>
@@ -95,11 +129,11 @@ function App() {
             <AdvantagesSection />
             <Seperator version='partial' />
             <AffliateProgramSection />
-            <div className="block md:hidden">
+            <div className='block md:hidden'>
               <Seperator version='basic' />
             </div>
 
-            <div id="howtobuy">
+            <div id='howtobuy'>
               <OfferSection />
               <Seperator version='basic' />
             </div>
@@ -108,17 +142,17 @@ function App() {
               <JoinUsSection isInViewport1={isInViewport1} />
             </div>
 
-            <div id="tokenomics">
+            <div id='tokenomics'>
               <TokenDistribution />
               <Seperator version='basic' />
             </div>
 
-            <div id="roadmap">
+            <div id='roadmap'>
               <RoadmapSection />
               <Seperator version='basic' />
             </div>
 
-            <div id="aboutus">
+            <div id='aboutus'>
               <AboutUs />
               <Seperator version='basic' />
             </div>
@@ -126,17 +160,16 @@ function App() {
             <FAQ />
             <Seperator version='basic' />
 
-            <div id="contact">
+            <div id='contact'>
               <GetInTouch />
               <Seperator version='basic' />
             </div>
 
             <Footer />
           </div>
-        )
-        }
-      </div >
-    </div >
+        )}
+      </div>
+    </div>
   );
 }
 

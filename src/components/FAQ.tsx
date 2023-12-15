@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const DashIcon = () => {
   return (
@@ -7,7 +7,8 @@ const DashIcon = () => {
       height='2'
       viewBox='0 0 20 2'
       fill='none'
-      xmlns='http://www.w3.org/2000/svg'>
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <rect
         width='20'
         height='2'
@@ -24,7 +25,8 @@ const AddIcon = () => {
       height='20'
       viewBox='0 0 20 20'
       fill='none'
-      xmlns='http://www.w3.org/2000/svg'>
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <path
         d='M0 9H20V11H0V9Z'
         fill='#D9D9D9'
@@ -42,42 +44,42 @@ const FAQ = () => {
     {
       question: (
         <p>
-          HOW DO I BUY A{" "}
+          HOW DO I BUY A{' '}
           <span className='font-bold'>
-            ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span>{" "}
-          </span>{" "}
+            ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span>{' '}
+          </span>{' '}
           TOKEN?
         </p>
       ),
       // 'HOW DO I BUY A ŠMILLIONAIRE NIGHTSTOKEN?',
       answer:
-        "SMillion Aire can only be purchased on our official website [Image of ŠMILLIONAIRENIGHTS website] with BNR ETH USDT KERC-20) USDC (ERC-20) BUSD (BEP-20)L USDI (BEP-20).or.credit card at our partner through Transak",
+        'SMillion Aire can only be purchased on our official website [Image of ŠMILLIONAIRENIGHTS website] with BNR ETH USDT KERC-20) USDC (ERC-20) BUSD (BEP-20)L USDI (BEP-20).or.credit card at our partner through Transak',
     },
     {
       question: (
         <p>
-          WHAT IS THE DIFFERENCE BETWEEN{" "}
+          WHAT IS THE DIFFERENCE BETWEEN{' '}
           <span className='font-bold'>
-            ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span>{" "}
-          </span>{" "}
+            ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span>{' '}
+          </span>{' '}
           AND OTHER DATING PLATFORMS?
         </p>
       ),
       answer:
-        "SMillion Aire is a new dating platform that focuses on connecting people with similar financial goals. It is different from other dating platforms in that it offers a variety of features that are specifically designed for millionaires and billionaires, such as a luxury marketplace and a private jet service.",
+        'SMillion Aire is a new dating platform that focuses on connecting people with similar financial goals. It is different from other dating platforms in that it offers a variety of features that are specifically designed for millionaires and billionaires, such as a luxury marketplace and a private jet service.',
     },
     {
-      question: "WHEN DO I GET PAID?",
+      question: 'WHEN DO I GET PAID?',
       answer:
-        "You will be paid out on the first of each month, directly to your bank account.",
+        'You will be paid out on the first of each month, directly to your bank account.',
     },
     {
       question: (
         <p>
-          WHAT MAKES{" "}
+          WHAT MAKES{' '}
           <span className='font-bold'>
-            ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span>{" "}
-          </span>{" "}
+            ŠMILLIONAIRE<span className='texttualgradient'>NIGHTS</span>{' '}
+          </span>{' '}
           SUSTAINABLE IN THE LONG-TERM?
         </p>
       ),
@@ -85,13 +87,13 @@ const FAQ = () => {
         "SMillion Aire is sustainable in the long-term because it is based on a subscription model. This means that users pay a monthly fee to access the platform's features. This revenue stream will allow SMillion Aire to continue to invest in its platform and grow its user base.",
     },
     {
-      question: "IS THERE AN APP FOR DATING?",
+      question: 'IS THERE AN APP FOR DATING?',
       answer:
-        "Yes, there is a SMillion Aire app for both iOS and Android devices.",
+        'Yes, there is a SMillion Aire app for both iOS and Android devices.',
     },
     {
-      question: "WHEN WILL THE LUXURY MARKETPLACE BE AVAILABLE?",
-      answer: "The luxury marketplace will be available in early 2024.",
+      question: 'WHEN WILL THE LUXURY MARKETPLACE BE AVAILABLE?',
+      answer: 'The luxury marketplace will be available in early 2024.',
     },
   ];
 
@@ -121,23 +123,25 @@ const FAQItem = ({ question, answer }: any) => {
   return (
     <div className='relative '>
       <div className='flex w-full gap-3 flex-col text-white'>
-        <p
+        <div
           className='w-[90%] md:w-full text-base md:text-lg font-normal'
-          onClick={() => setOpen(!open)}>
+          onClick={() => setOpen(!open)}
+        >
           {question}
-        </p>
+        </div>
         {!open && <div className='w-full h-[1px] bg-[#5318D1]' />}
         {open && (
           <div>
-            <p className='text-sm  md:text-base font-light text-[#989898]'>
+            <div className='text-sm  md:text-base font-light text-[#989898]'>
               {answer}
-            </p>
+            </div>
           </div>
         )}
       </div>
       <span
         onClick={() => setOpen(!open)}
-        className='absolute right-2 top-1 cursor-pointer'>
+        className='absolute right-2 top-1 cursor-pointer'
+      >
         {open ? <DashIcon /> : <AddIcon />}
       </span>
     </div>
