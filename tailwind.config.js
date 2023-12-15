@@ -11,6 +11,7 @@ module.exports = {
         xs1: "361px",
         lg2: "1140px",
         lg3: "1440px",
+        "3xl": "1920px",
       },
       fontFamily: {
         SonyGothic: ["SonyGothic", ...defaultTheme.fontFamily.sans],
