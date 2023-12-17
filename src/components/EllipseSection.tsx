@@ -1,7 +1,6 @@
 import React from 'react';
-import { Ellipse, Globe_PNG, ShadyDotsIcon2 } from '../assets/pngs';
-import { CircularAnimation } from './CircularAnimation';
-// import { millionairenight2nd } from "../assets/pngs";
+import { Globe_PNG, ShadyDotsIcon2, Ellipse } from '../assets/pngs';
+
 const EllipseSection = () => {
   return (
     <div className='flex flex-col items-center lg:items-left lg:flex-row gap-0 lg:gap-6 py-12'>
