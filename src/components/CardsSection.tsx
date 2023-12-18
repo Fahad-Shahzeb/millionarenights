@@ -5,6 +5,7 @@ import {
   DollarCoin_PNG,
   HeartCoin_PNG,
 } from "../assets";
+import { motion } from "framer-motion";
 
 const CardsSection = () => {
   return (
@@ -42,11 +43,16 @@ const CardsSection = () => {
                 of features to help you find your ideal partner.
               </p>
             </div>
-            <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black md:-mt-0 -mt-4 mb-8'>
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.5 },
+              }}
+              className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black md:-mt-0 -mt-4 mb-8'>
               <p className='text-base md:text-lg font-normal antialiased'>
                 Buy <span className=' '>$</span>Millionaire
               </p>
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -83,11 +89,16 @@ const CardsSection = () => {
                 services.{" "}
               </p>
             </div>
-            <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black md:-mt-0 -mt-4 mb-8'>
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.5 },
+              }}
+              className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black md:-mt-0 -mt-4 mb-8'>
               <p className='text-base md:text-lg font-normal antialiased'>
                 Buy <span className=' '>$</span>Millionaire
               </p>
-            </button>
+            </motion.button>
           </div>
           <div className='absolute -right-8 top-44 md:-right-16  2xl:-right-32 2xl:top-32  '>
             <img

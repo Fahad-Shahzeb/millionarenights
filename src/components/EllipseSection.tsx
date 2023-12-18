@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Ellipse30, Logo, Ellipse28, Globe_PNG, ShadyDotsIcon2, Ellipse } from "../assets/pngs";
-import { CircularAnimation } from "./CircularAnimation";
-// import { millionairenight2nd } from "../assets/pngs";
+import { useState } from "react";
+import { Globe_PNG, ShadyDotsIcon2, Ellipse } from "../assets/pngs";
+import { motion } from 'framer-motion';
+
 const EllipseSection = () => {
     const [isMovingUp, setIsMovingUp] = useState(false);
     const [positionY, setPositionY] = useState(1);
@@ -56,9 +56,14 @@ const EllipseSection = () => {
                                 </p>
                             </div>
                             <div className="text-center">
-                                <button className="cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 rounded-3xl py-2 text-black ">
+                                <motion.button
+                                    whileHover={{
+                                        scale: 1.05,
+                                        transition: { duration: 1 },
+                                    }}
+                                    className="cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 rounded-3xl py-2 text-black ">
                                     <p className="text-lg text-center font-semibold">Buy $MillionAire</p>
-                                </button>
+                                </motion.button>
                             </div>
                         </div>
                     </div>

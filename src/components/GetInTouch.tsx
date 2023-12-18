@@ -1,5 +1,6 @@
 import React from "react";
 import { DotsShades } from "../assets/svgs/DotsShades";
+import { motion } from "framer-motion";
 
 function GetInTouch() {
   return (
@@ -70,9 +71,14 @@ function GetInTouch() {
             </div>
           </div>
           <div className="flex justify-center md:justify-start sm:ml-[150px]">
-            <button className="bg-gradient-to-t font-semibold from-[#5318D1] to-[#C85EF7] px-5 rounded-3xl py-[14px] text-white ">
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 1 },
+              }}
+              className="bg-gradient-to-t font-semibold from-[#5318D1] to-[#C85EF7] px-5 rounded-3xl py-[14px] text-white ">
               Send Message
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

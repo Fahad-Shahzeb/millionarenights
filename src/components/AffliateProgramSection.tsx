@@ -1,6 +1,7 @@
 import React from 'react'
 import { AffliateProgramEllipsePNG, CircleGradient, } from '../assets'
 import { GradientButton } from './GradientButton'
+import { motion } from 'framer-motion'
 
 
 
@@ -43,9 +44,13 @@ const AffliateProgramSection = () => {
                         <p className='text:xl hidden md:block lg:text-2xl font-light  text-right leading-[120%] w-[70%]'>Share your personalised link with your friends, family and network to be rewarded.</p>
                         <div className='w-full hidden md:block'>
                             <div className='mt-4 flex justify-end items-center flex-1  w-full gap-3'>
-                                <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
+                                <motion.button
+                                    whileHover={{
+                                        scale: 1.05,
+                                        transition: { duration: 0.5 },
+                                    }} className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-3 text-black '>
                                     <p className=' text-lg justify-center text-center font-semibold  antialiased'>Buy  <span className=' '> $</span>MillionAire</p>
-                                </button>
+                                </motion.button>
                                 {/* <button
                                     style={{ border: '1.5px solid var(--GRAD_01, #775CF4)' }}
                                     className='gradient-hover-effect cursor-pointer py-3 flex items-center justify-center px-4  rounded-[30px]'>

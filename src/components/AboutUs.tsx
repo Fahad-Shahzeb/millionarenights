@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { RoadMapLeftPNG, RoadMapRightPNG, SocialIcons, User2 } from '../assets';
+import { motion } from 'framer-motion';
 
 type mode = 'facebook' | 'instagram' | 'twitter' | 'vimeo';
 
@@ -73,7 +74,11 @@ const AboutUs = () => {
             </p>
             <div className=' mb-8 lg:mb-0 flex gap-2 lg:gap-3  justify-center items-center '>
               {socialIcons.map((item, index) => (
-                <button
+                <motion.button
+                  whileHover={{
+                    scale: 1.2,
+                    transition: { duration: 1 },
+                  }}
                   key={index}
                   className=' gradient-hover-effect cursor-pointer inset-0 rounded-[100px] p-3 flex justify-center items-center w-[44px] h-[44px]'
                   style={{
@@ -85,7 +90,7 @@ const AboutUs = () => {
                     mode={item}
                     size={1.3}
                   />
-                </button>
+                </motion.button>
               ))}
             </div>
           </div>

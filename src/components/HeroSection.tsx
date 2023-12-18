@@ -2,6 +2,7 @@ import React from 'react';
 
 import { GradientButton } from './GradientButton';
 import { ETHIcon, SocialIcons, USDTIcon } from '../assets';
+import { motion } from "framer-motion"
 
 type mode = 'facebook' | 'instagram' | 'twitter' | 'vimeo';
 
@@ -39,7 +40,11 @@ const HeroSection = () => {
               </div>
               <div className='lg:mb-0 flex gap-2 lg:gap-3 justify-center items-center '>
                 {socialIcons.map((item, index) => (
-                  <button
+                  <motion.button
+                    whileHover={{
+                      scale: 1.3,
+                      transition: { duration: 0.5 },
+                    }}
                     key={index}
                     className=' gradient-hover-effect cursor-pointer rounded-full flex justify-center items-center w-[44px] h-[44px] '
                     style={{
@@ -51,7 +56,7 @@ const HeroSection = () => {
                       mode={item}
                       size={20}
                     />
-                  </button>
+                  </motion.button>
                 ))}
               </div>
             </div>
@@ -145,11 +150,16 @@ const HeroSection = () => {
                   text='Connect Wallet'
                   className='w-[calc(50%-4px)]'
                 />
-                <button className='gradient-hover-effect cursor-pointer py-3 bg-gradient-to-t from-[#775CF4] to-[#C85EF7] flex items-center justify-center px-1  md:px-4 bg-[#fff]/[0.07] w-1/2  rounded-[30px]'>
+                <motion.button
+                  whileHover={{
+                    scale: 1.05,
+                    transition: { duration: 0.5 },
+                  }}
+                  className='gradient-hover-effect cursor-pointer py-3 bg-gradient-to-t from-[#775CF4] to-[#C85EF7] flex items-center justify-center px-1  md:px-4 bg-[#fff]/[0.07] w-1/2  rounded-[30px]'>
                   <p className='text-sm 2xl:text-base text-center font-normal antialiased leading-[150%]  w-full'>
                     Buy Crypto
                   </p>
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>

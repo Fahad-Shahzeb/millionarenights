@@ -6,7 +6,6 @@ import { useWindowDimensions } from '../utils';
 const MainHeadingSection = () => {
 
     const { width } = useWindowDimensions()
-    console.log({ width })
     return (
         <div className='w-full '>
             <div className='flex px-8 flex-row gap-2 justify-between h-full py-8'>

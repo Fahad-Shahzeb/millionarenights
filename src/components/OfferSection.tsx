@@ -1,6 +1,7 @@
 import React from "react";
 import { OfferDotsIcon } from "../assets";
 import { GradientButton } from "./GradientButton";
+import { motion } from "framer-motion";
 
 const OfferSection = () => {
   return (
@@ -27,11 +28,16 @@ const OfferSection = () => {
           </p>
           <div className='w-full block mt-3 md:mt-0'>
             <div className='mt-4 flex justify-center md:justify-end items-center flex-1  w-full gap-3'>
-              <button className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-2 md:py-3 text-black '>
+              <motion.button
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.5 },
+                }}
+                className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 flex justify-center  rounded-3xl py-2 md:py-3 text-black '>
                 <p className='text-sm lg:text-lg justify-center text-center font-semibold  antialiased'>
                   Buy <span className=' '> $</span>MillionAire
                 </p>
-              </button>
+              </motion.button>
               <GradientButton text='Read more' className="" buttonClassName='!px-4 !text-lg font-semibold ' />
 
             </div>

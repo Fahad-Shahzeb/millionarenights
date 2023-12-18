@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 import { ShadyDotsIcon2, Iphone } from '../assets';
+import { motion } from 'framer-motion';
 
 const MobileScreenComponent = () => {
   const videoRef: any = useRef(null);
@@ -77,11 +78,16 @@ const MobileScreenComponent = () => {
             privileged. 2024, Monaco - Tickets available soon!
           </p>
         </div>
-        <button className='cursor-pointer mt-6 md:my-10 bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black'>
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.5 },
+          }}
+          className='cursor-pointer mt-6 md:my-10 bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-5 self-center rounded-3xl py-2 text-black'>
           <p className='text-lg font-semibold antialiased'>
             Buy <span className=' '>$</span>Millionaire
           </p>
-        </button>
+        </motion.button>
       </div>
     </div>
   );
