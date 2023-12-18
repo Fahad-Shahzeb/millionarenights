@@ -12,7 +12,6 @@ const MobileScreenComponent = () => {
 
       const rect = element.getBoundingClientRect();
       const isInViewNow = rect.top >= 0 && rect.bottom <= window.innerHeight;
-      console.log('IS In View Now', isInViewNow);
       if (isInViewNow) {
         element.play().catch((error: Error) => {
           console.error('Error playing video:', error);
