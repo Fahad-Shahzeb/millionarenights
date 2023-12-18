@@ -33,11 +33,16 @@ const HeroSection = () => {
             </p>
 
             <div className='flex justify-center xs:mb-8 sm:mb-0 flex-col sm:flex-row lg2:justify-start md:items-center items-center lg2:text-left w-full gap-5 lg:gap-7 mt-5 lg:mt-[32px]'>
-              <div className='bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-6 py-2 lg:px-5 rounded-3xl lg:py-2 text-black '>
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.5 },
+                }}
+                className='cursor-pointer bg-gradient-to-t from-[#CDB8FB] to-[#FFF] px-6 py-2 lg:px-5 rounded-3xl lg:py-2 text-black '>
                 <p className='text-sm md:text-lg leading-[150%] font-normal lg:font-semibold antialiased'>
                   White Paper
                 </p>
-              </div>
+              </motion.div>
               <div className='lg:mb-0 flex gap-2 lg:gap-3 justify-center items-center '>
                 {socialIcons.map((item, index) => (
                   <motion.button
