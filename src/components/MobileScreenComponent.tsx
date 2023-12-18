@@ -46,7 +46,7 @@ const MobileScreenComponent = () => {
             className='hidden max-w-[100%] xl:block rotate-90'
             alt=''
           />
-          <div className='w-[400px] lg:w-[600px] xl:w-[800px] 2xl:w-[1100px] relative'>
+          <div className='w-[330px] my-3 sm:my-8 sm:w-[400px] lg:w-[600px] xl:w-[800px] 2xl:w-[1100px] relative'>
             <img
               src={Iphone}
               className='w-full h-full'
@@ -61,7 +61,7 @@ const MobileScreenComponent = () => {
               ref={(el) => {
                 videoRef.current = el;
               }}
-              className='absolute xl:max-w-[77%] h-[89%] top-[5%] left-[12%]'
+              className='absolute   xl:max-w-[77%] h-[89%] top-[5%] left-[12%]'
               src='https://business.milliomosok.com/wp-content/uploads/2023/09/Monaco-v3.mp4'
             />
           </div>
