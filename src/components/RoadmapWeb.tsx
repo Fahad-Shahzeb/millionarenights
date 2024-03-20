@@ -28,7 +28,7 @@ const Flag = () => (
 
 const Card = ({ description, hr = true, slideClass }: AboutUsProps) => (
   <div
-    className={`relative mb-4 flex justify-center items-center  `}
+    className={`relative mb-4 flex  justify-center items-center  `}
     style={{ flex: "0 0 33.333%" }}
   >
     <div className={`w-[100%] flex justify-center ${slideClass}`}>
@@ -38,14 +38,15 @@ const Card = ({ description, hr = true, slideClass }: AboutUsProps) => (
         <div className="absolute -mt-3 top-0 left-auto right-auto bg-[#5318D1] w-[80%]  h-full md:h-[25px] rounded-t-[15px] 2xl:rounded-t-[30px] z-10" />
         <div className="absolute -mb-3  bottom-0 left-auto right-auto bg-[#5318D1] w-[80%]  h-full md:h-[25px] rounded-b-[15px] 2xl:rounded-b-[30px] z-10" />
         <div
-          className=" z-50 p-4 2xl:p-[30px] flex items-center justify-center gap-4 flex-col bg-[#0F0F0F] text-center rounded-[20px] 2xl:rounded-[20px] w-full
-            max-w-[334px]
-            lg:max-w-[334px]  md:h-48 h-32 
+          className=" z-50 p-4 2xl:p-[30px] flex items-center justify-center gap-4 flex-col bg-[#0F0F0F] text-center rounded-[20px] 2xl:rounded-[20px]
+            w-[240px]
+            lg:w-[350px]
+            lg:max-w-[354px]  md:h-52 h-32 
             md:max-w-[400px]π
             sm:max-w-[350px]
             "
         >
-          <p className="max-w-[235px] text-[#989898] w-full antialiased text-sm lg:text-base font-light">
+          <p className="max-w-[245px] text-[#989898] w-full antialiased text-sm lg:text-base font-light">
             {description}
           </p>
         </div>
@@ -60,34 +61,151 @@ const Card = ({ description, hr = true, slideClass }: AboutUsProps) => (
 );
 
 const RoadmapWeb = () => {
+  const details = [
+    {
+      title: "2018",
+      desc: (
+        <span>
+          Brand established
+          <br /> Beta version 1 launched
+        </span>
+      ),
+    },
+    {
+      title: "2019",
+      desc: (
+        <span>
+          Beta version 2
+          <br /> New design
+          <br /> Social media channels established
+          <br /> Developments
+        </span>
+      ),
+    },
+    {
+      title: "2021",
+      desc: (
+        <span>
+          New design
+          <br /> Final version launched
+          <br /> PR & Marketing campaign
+        </span>
+      ),
+    },
+    {
+      title: "2022",
+      desc: (
+        <span>
+          Website development
+          <br /> Corrections
+          <br /> User number scaling
+        </span>
+      ),
+    },
+    {
+      title: "Q2 - 2023",
+      desc: <span>Pre-registration site development</span>,
+    },
+    {
+      title: "Q3 - 2023",
+      desc: (
+        <span>
+          Luxury Marketplace development
+          <br /> Development of the ICO’s concept
+        </span>
+      ),
+    },
+    {
+      title: "Q4 - 2023",
+      desc: (
+        <span>
+          Project is put into a docker
+          <br /> Server structure design
+          <br /> ICO website development
+        </span>
+      ),
+    },
+    {
+      title: "Q1 - 2024",
+      desc: (
+        <span>
+          White Paper drafted
+          <br /> Private Sale 1 started
+          <br /> Recruitment of business partners
+          <br /> PR & Marketing campaign
+        </span>
+      ),
+    },
+    {
+      title: "Q2 - 2024",
+      desc: (
+        <span>
+          Investment office establishment
+          <br /> Launch dating site in England
+          <br /> Raise awareness
+          <br /> Luxury party in England
+          <br /> Recruitment of additional business partners
+          <br /> App development
+        </span>
+      ),
+    },
+    {
+      title: "Q3 - 2024",
+      desc: (
+        <span>
+          Luxury Marketplace beta version start
+          <br /> Exciting new functions
+          <br /> App beta version tests
+          <br /> Luxury party in Monaco
+        </span>
+      ),
+    },
+    {
+      title: "Q4 - 2024",
+      desc: (
+        <span>
+          Luxury Marketplace improvement
+          <br /> Launch dating site in the USA
+        </span>
+      ),
+    },
+    {
+      title: "Q2 - 2025",
+      desc: (
+        <span>
+          Marketing campaign
+          <br /> Expansion in the USA
+        </span>
+      ),
+    },
+    {
+      title: "Q3 - 2025",
+      desc: <span>Launch Marketplace in the USA</span>,
+    },
+    {
+      title: "Q1 - 2026",
+      desc: (
+        <span>
+          Launch Marketplace and dating site in Australia
+          <br /> Launch marketing campaigns
+          <br /> Engagement of Australian influencers and business partners
+        </span>
+      ),
+    },
+  ];
   const RoadmapBubble = (): JSX.Element => {
     return (
       <div className="relative w-full flex flex-col ">
         <div className="w-full flex-col mx-auto ">
           <div className="flex flex-row flex-nowrap justify-between ">
-            {[
-              "2018",
-              "2019",
-              "2021",
-              "2022",
-              "Q2 - 2023",
-              "Q3 - 2023",
-              "Q3 - 2023",
-              "Q1 - 2024",
-              "Q2 - 2024",
-              "Q3 - 2024",
-              "Q4 - 2024",
-              "Q2 - 2025",
-              "Q3 - 2025",
-              "Q1 - 2026",
-            ].map((item, index) => {
+            {details.map((item, index) => {
               return (
                 <p
                   key={index}
                   className="custom_text_slide texttualgradient text-3xl xl:text-6xl font-semibold text-center"
                   style={{ flex: "0 0 33.333%" }}
                 >
-                  {item}
+                  {item.title}
                 </p>
               );
             })}
@@ -103,175 +221,16 @@ const RoadmapWeb = () => {
           </div>
           <div className="mx-auto  ">
             <div className="flex slides_container flex-row  justify-between overflow-hidden ">
-              <Card
-                slideClass="custom_slide"
-                hr={true}
-                description={
-                  <span>
-                    Brand established
-                    <br /> Beta version 1 launched
-                  </span>
-                }
-              />
-              <Card
-                slideClass="custom_slide"
-                description={
-                  <span>
-                    Beta version 2
-                    <br /> New design
-                    <br /> Social media channels established
-                  </span>
-                }
-              />
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    New design
-                    <br /> Final version launched
-                    <br /> PR&amp;Marketing campaign
-                  </span>
-                }
-              />
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Website development
-                    <br /> corrections
-                    <br /> User number scaling
-                  </span>
-                }
-              />
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={<span>Pre-registration site development</span>}
-              />
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Luxury Marketplace development
-                    <br /> Development of the ICO’s concept
-                  </span>
-                }
-              />
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Project is put into a docker
-                    <br /> Server structure design
-                    <br /> ICO website development
-                  </span>
-                }
-              />
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Luxury Marketplace development
-                    <br /> Development of the ICO’s concept
-                  </span>
-                }
-              />
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Project is put into a docker
-                    <br /> Server structure design
-                    <br /> ICO website development
-                  </span>
-                }
-              />
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    White Paper drafted
-                    <br /> Private Sale 1 started
-                    <br /> Recruitment of business partners
-                    <br /> PR & Marketing campaign
-                  </span>
-                }
-              />
-
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Investment office establishment
-                    <br /> Launch dating site in England
-                    <br /> Raise awareness
-                    <br /> Recruitment of additional business partners
-                    <br /> App development
-                  </span>
-                }
-              />
-
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Luxury Marketplace beta version start
-                    <br /> Exciting new functions
-                    <br /> App beta version tests
-                    <br /> Luxury party in Monaco
-                  </span>
-                }
-              />
-
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Luxury Marketplace improvement
-                    <br /> Launch dating site in the USA
-                  </span>
-                }
-              />
-
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Marketing campaign
-                    <br /> Expansion in the USA
-                  </span>
-                }
-              />
-
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={<span>Launch Marketplace in the USA</span>}
-              />
-
-              <Card
-                slideClass="custom_slide"
-                hr={false}
-                description={
-                  <span>
-                    Launch Marketplace and dating site in Australia
-                    <br /> Launch marketing campaigns
-                    <br /> Engagement of Australian influencers and business
-                    partners
-                  </span>
-                }
-              />
+              {details.map((item, index) => {
+                return (
+                  <Card
+                    key={index}
+                    slideClass="custom_slide"
+                    hr={index === 0 || index === 1 ? true : false}
+                    description={item.desc}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
